@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="60mm"
+   height="55mm"
+   viewBox="0 0 212.59843 194.88189"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="logo.svg"
+   inkscape:export-filename="/home/gdevailly/mnt/inra_p/RToulouse/logo.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300">
+  <defs
+     id="defs4">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4228">
+      <stop
+         style="stop-color:#ff5599;stop-opacity:1"
+         offset="0"
+         id="stop4230" />
+      <stop
+         style="stop-color:#80ffe6;stop-opacity:1"
+         offset="1"
+         id="stop4232" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4228"
+       id="linearGradient4234"
+       x1="100.85767"
+       y1="459.74966"
+       x2="435.36295"
+       y2="698.54614"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.87744227,0,0,1.2403561,4.9898514,-159.0311)" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8"
+     inkscape:cx="30.011194"
+     inkscape:cy="59.933366"
+     inkscape:document-units="px"
+     inkscape:current-layer="g4242"
+     showgrid="false"
+     inkscape:window-width="1623"
+     inkscape:window-height="1029"
+     inkscape:window-x="2617"
+     inkscape:window-y="21"
+     inkscape:window-maximized="1"
+     fit-margin-top="1"
+     fit-margin-left="1"
+     fit-margin-right="1"
+     fit-margin-bottom="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-14.283386,-156.26776)">
+    <g
+       id="g4238"
+       transform="matrix(0.48178139,0,0,0.42344493,6.2113048,16.132528)">
+      <ellipse
+         ry="149.28571"
+         rx="176.42857"
+         cy="512.36218"
+         cx="217.14287"
+         id="path4218"
+         style="fill:url(#linearGradient4234);fill-opacity:1;stroke:none" />
+      <ellipse
+         ry="95.672844"
+         rx="112.96703"
+         cy="525.14417"
+         cx="252.56364"
+         id="path4236"
+         style="fill:#ffffff;stroke:none" />
+    </g>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3344"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><flowRegion
+         id="flowRegion3346"><rect
+           id="rect3348"
+           width="74.285713"
+           height="65.714287"
+           x="160.71428"
+           y="426.64792" /></flowRegion><flowPara
+         id="flowPara3350" /></flowRoot>    <g
+       id="g4242">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#212121;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="85.142578"
+         y="305.02539"
+         id="text4151"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           x="85.142578"
+           y="305.02539"
+           id="tspan4153"><tspan
+             x="85.142578"
+             y="305.02539"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:162.5px;font-family:'Courier 10 Pitch';-inkscape-font-specification:'Courier 10 Pitch';fill:#212121;fill-opacity:1"
+             id="tspan4155">R</tspan></tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3352"
+         y="325.36221"
+         x="90.857147"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#212121;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;font-size:25px;font-family:'Liberation Sans Narrow';-inkscape-font-specification:'Liberation Sans Narrow Bold Condensed';fill:#212121;fill-opacity:1"
+           y="325.36221"
+           x="90.857147"
+           id="tspan3354"
+           sodipodi:role="line">Toulouse</tspan></text>
+    </g>
+  </g>
+</svg>
