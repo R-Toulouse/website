@@ -1,4 +1,4 @@
-baseURL = "http://example.com/"
+baseURL = "http://r-toulouse.netlify.com/"
 languageCode = "fr-fr"
 title = "R Toulouse"
 theme = "minimal"
