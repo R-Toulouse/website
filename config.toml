@@ -48,7 +48,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 [[menu.icon]]
     url = "https://twitter.com/RUG_Toulouse"
     name = "twitter"
-    weight = 3
+    weight = 1
 
 [[menu.icon]]
     url = "https://github.com/R-Toulouse"
@@ -58,9 +58,9 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 [[menu.icon]]
     url = "https://r-toulouse.slack.com"
     name = "slack"
-    weight = 5
+    weight = 3
 
 [[menu.icon]]
     url = "mailto:rug.toulouse@gmail.com"
     name = "envelope-o"
-    weight = 1
+    weight = 4
