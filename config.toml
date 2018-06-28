@@ -12,6 +12,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     description_fr = "Groupe d'utilisatrices et d'utilisateurs de R de Toulouse"
     githubUsername = "R-Toulouse"
     accent = "#FF5599"
+    profilePic = "/img/logo.svg"
     showBorder = true
     backgroundColor = "white"
     font = "Raleway" # should match the name on Google Fonts!
