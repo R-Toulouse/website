@@ -9,7 +9,7 @@ tags:
   - Rencontres
 ---
 
-![](/img/logo.svg)
+<!--  ![](/img/logo.svg) --> 
 
 La première rencontre du groupe des utilistarices et utilisateurs de R de Toulouse est prévu le **mardi mardi 25 septembre 2018** de **17h à 18h**,
 à l'**amphithéatre Schwartz de l'Institut de Mathématiques de Toulouse** (métro ligne B, Université Paul Sabatier) :
