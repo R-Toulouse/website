@@ -24,7 +24,7 @@ leaflet() %>%
 Ces rencontres sont ouvertes à toutes et tous, académiques, professionels et amateurs, débutants ou confirmés.
 
 **Nous cherchons deux oratrices ou orateurs** pour assurer des présentations de 20 minutes, suivit de 10 minutes d'échanges avec l'audience.
-Tout les sujets sont les bienvenus, en espèrant pouvoir organiser une sessions introductive (par exemple à `R` en général, au package `ggplot2`, au `tidyverse`, à `R markdown`, aux bonnes pratiques, etc.) et une session plus spécialisée (présentation d'un nouveau *package*, introduction au dévelopement de *package*, `shiny`, comment R est utilisé dans votre groupe, etc.).
+Tout les sujets sont les bienvenus, en espèrant pouvoir organiser une sessions introductive (par exemple à `R` en général, au package `ggplot2`, au `tidyverse`, à `R markdown`, aux bonnes pratiques, etc.) et une session plus spécialisée (présentation d'un nouveau *package*, introduction au dévelopement de *packages*, `shiny`, comment R est utilisé dans votre groupe, etc.).
 
 **Nous avons besoins de vous !** Si vous êtes volontaire, merci de nous contacter (par mail, twitter, slack ou github à votre convenance, liens en haut à gauche de la page), avec un titre et un petit résumé de votre présentation.
 
