@@ -11,7 +11,7 @@ slug: une-premiere-rencontre
 
 ![](/img/logo.svg)
 
-La première rencontre du groupe des utilistarices et utilisateurs de R de Toulouse est prévu le **mardi mardi 25 septembre 2018** de **17h à 18h**,
+La première rencontre du groupe des utilisatrices et utilisateurs de R de Toulouse est prévu le **mardi mardi 25 septembre 2018** de **17h à 18h**,
 à l'**amphithéatre Schwartz de l'Institut de Mathématiques de Toulouse** (métro ligne B, Université Paul Sabatier) :
 
 ```{r plan, echo=FALSE}
@@ -21,14 +21,14 @@ leaflet() %>%
   addMarkers(lat = 43.56162, lng = 1.46577, popup = "Institut de Mathématiques de Toulouse")
 ```
 
-Ces rencontres sont ouvertes à toutes et tous, académiques, professionels et amateurs, débutants ou confirmés.
+Ces rencontres sont ouvertes à toutes et tous, académiques, professionnels et amateurs, débutants ou confirmés.
 
 **Nous cherchons deux oratrices ou orateurs** pour assurer des présentations de 20 minutes, suivit de 10 minutes d'échanges avec l'audience.
-Tout les sujets sont les bienvenus, en espèrant pouvoir organiser une sessions introductive (par exemple à `R` en général, au package `ggplot2`, au `tidyverse`, à `R markdown`, aux bonnes pratiques, etc.) et une session plus spécialisée (présentation d'un nouveau *package*, introduction au dévelopement de *packages*, `shiny`, comment R est utilisé dans votre groupe, etc.).
+Tout les sujets sont les bienvenus, en espérant pouvoir organiser une sessions introductive (par exemple à `R` en général, au package `ggplot2`, au `tidyverse`, à `R markdown`, aux bonnes pratiques, etc.) et une session plus spécialisée (présentation d'un nouveau *package*, introduction au développement de *packages*, `shiny`, comment R est utilisé dans votre groupe, etc.).
 
 **Nous avons besoins de vous !** Si vous êtes volontaire, merci de nous contacter (par mail, twitter, slack ou github à votre convenance, liens en haut à gauche de la page), avec un titre et un petit résumé de votre présentation.
 
-À la fin de cette rencontre, vous pourrez exprimer votre opinion quand aux horraires et lieux des prochaines rencontres de R Toulouse, ainsi que manifester votre volonté de rejoindre le comité d'organisation.
+À la fin de cette rencontre, vous pourrez exprimer votre opinion quand aux horaires et lieux des prochaines rencontres de R Toulouse, ainsi que manifester votre volonté de rejoindre le comité d'organisation.
 
 Nous vous espérons nombreux !
 
