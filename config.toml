@@ -20,6 +20,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     highlightStyle = "solarized-dark"
     highlightLanguages = ["R", "go", "haskell", "kotlin", "scala", "swift"]
     copyright = "Propulsé par [Blogdown](https://github.com/rstudio/blogdown), [Hugo](https://gohugo.io), [Minimal](https://github.com/calintat/minimal), [GitHub](https://github.com/) et [netlify](https://www.netlify.com/)."
+    favicon = "/img/logo.svg"
 
 [[menu.main]]
     url = "/"
