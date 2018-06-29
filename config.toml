@@ -63,6 +63,6 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     weight = 3
 
 [[menu.icon]]
-    url = "mailto:rug.toulouse@gmail.com"
+    url = "https://groups.google.com/forum/#!forum/r-toulouse"
     name = "envelope-o"
     weight = 4
