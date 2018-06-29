@@ -1,12 +1,12 @@
 ---
 title: Une première rencontre
 author: Guillaume Devailly
-date: '2018-06-28'
-slug: une-premiere-rencontre
+date: '2018-06-29'
 categories:
   - Rencontres
 tags:
   - Rencontres
+slug: une-premiere-rencontre
 ---
 
 ![](/img/logo.svg)
@@ -19,7 +19,6 @@ library(leaflet)
 leaflet() %>%
   addTiles() %>%  # Add default OpenStreetMap map tiles
   addMarkers(lat = 43.56162, lng = 1.46577, popup = "Institut de Mathématiques de Toulouse")
-
 ```
 
 Ces rencontres sont ouvertes à toutes et tous, académiques, professionels et amateurs, débutants ou confirmés.
@@ -32,3 +31,4 @@ Tout les sujets sont les bienvenus, en espèrant pouvoir organiser une sessions 
 À la fin de cette rencontre, vous pourrez exprimer votre opinion quand aux horraires et lieux des prochaines rencontres de R Toulouse, ainsi que manifester votre volonté de rejoindre le comité d'organisation.
 
 Nous vous espérons nombreux !
+
