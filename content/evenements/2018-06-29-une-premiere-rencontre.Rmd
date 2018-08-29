@@ -21,14 +21,49 @@ leaflet() %>%
   addMarkers(lat = 43.56162, lng = 1.46577, popup = "Institut de Mathématiques de Toulouse")
 ```
 
-Ces rencontres sont ouvertes à toutes et tous, académiques, professionnels et amateurs, débutants ou confirmés.
+## Programme
+- [Marylène Henry](https://twitter.com/henry_marylene) présentera une inititation à `ggplot2` :
 
-**Nous cherchons deux oratrices ou orateurs** pour assurer des présentations de 20 minutes, suivies de 10 minutes d'échanges avec l'audience.
-Tous les sujets sont les bienvenus, en espérant pouvoir organiser une session introductive (par exemple à `R` en général, au package `ggplot2`, au `tidyverse`, à `R markdown`, aux bonnes pratiques, etc.) et une session plus spécialisée (présentation d'un nouveau *package*, introduction au développement de *packages*, `shiny`, comment R est utilisé dans votre groupe, etc.).
+**Réaliser vos visualisations graphiques avec R – initiation au package ggplot2**
 
-**Nous avons besoins de vous !** Si vous êtes volontaire, merci de nous contacter (par mail, twitter, slack ou github à votre convenance, liens en haut à gauche de la page), avec un titre et un petit résumé de votre présentation.
+`ggplot2` est une extension du *tidyverse* permettant de générer des graphiques avec une syntaxe cohérente et puissante. Cela nécessite l’apprentissage d’une syntaxe de programmation supplémentaire basée sur la *grammar of graphics* de Wilkinson.
+L’objectif de cette présentation sera de présenter le langage de construction de graphiques. A partir d'exemples, les différentes couches de création d'un graphique seront présentées.
+Enfin, il s'agira de donner quelques astuces pour prendre en main rapidement le package et personnaliser ses propres graphiques.
+
+- [Serguei Sokol](https://twitter.com/influx_s) présentera le package `Deriv`, qu'il maintient sur
+[CRAN](https://cran.r-project.org/package=Deriv) :
+
+**Dériver symboliquement des fonctions mathématiques avec R et le package Deriv**
+
+The `Deriv` package offers extended capacities for R code
+differentiation compared to the classical function `deriv()` available in R.
+`Deriv` can differentiate not only R expressions but whole functions
+with multiple assignment operators, if-else constructs and so on. The
+result of a function differentiation is also a function that can be
+called and/or submitted to optimization routines for calculating
+gradients and/or hessians. A default table with differentiation rule is
+quite furnished including classical and special mathematical functions
+but also probability densities. Moreover, this table can be extended by
+custom functions provided by user thus adapting differentiation rules to
+its own situation.
+We present here basics of 'Deriv' functioning and provide few examples
+illustrating its advantages.
+
+------
+
+Les présentations seront en Français, mais les diapos pourront être en anglais.
 
 À la fin de cette rencontre, vous pourrez exprimer votre opinion quant aux horaires et lieux des prochaines rencontres de R Toulouse, ainsi que manifester votre volonté de rejoindre le comité d'organisation.
 
-Nous vous espérons nombreux !
+Ces rencontres sont gratuites, ouvertes à toutes et tous, académiques, professionnels et amateurs, débutants ou confirmés.
+
+N'hésitez pas à diffuser l'annonce autour de vous.
+
+**Nous cherchons des oratrices ou orateurs** pour les prochains évènements, pour assurer des présentations de 20 minutes, suivies de 10 minutes d'échanges avec l'audience.
+Tous les sujets sont les bienvenus, en espérant pouvoir organiser une session introductive (par exemple à `R` en général, au package `ggplot2`, au `tidyverse`, à `R markdown`, aux bonnes pratiques, etc.) et une session plus spécialisée (présentation d'un nouveau *package*, introduction au développement de *packages*, `shiny`, comment R est utilisé dans votre groupe, etc.).
+
+**Nous avons besoins de vous !** Si vous êtes volontaire, merci de nous contacter (par mail : rug.toulouse[at]gmail.com, twitter, slack ou github à votre convenance, liens en haut à gauche de la page), avec un titre et un petit résumé de votre présentation.
+
+
+
 
