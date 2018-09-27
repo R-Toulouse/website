@@ -1,0 +1,44 @@
+---
+title: Diaporamas de la rencontre de Septembre 2019
+author: Guillaume Devailly
+date: '2018-09-27'
+slug: diaporamas-de-la-rencontre-de-septembre-2019
+categories:
+  - Diaporamas
+tags:
+  - Diaporamas
+---
+
+Merci beaucoup à Marylène Henry et Serguei Sokol pour leurs présentations.
+
+Vous pouvez retrouver leurs diapos ici :
+
+- Initiation à l’utilisation du package ggplot2, par Marylène Henry : [pdf](/diapos/2018-09-25_ggplot2 _initiation.pdf)
+- *Symbolic Differentiation of R Code with Deriv Package*, par Serguei Sokol : [pdf](/diapos/2018-09-25_deriv_rug.pdf) 
+
+```{r, echo=FALSE, eval=FALSE}
+# Nous avons aussi eu une présentation de la prochaine conférence [UseR! 2019](http://www.user2019.fr/), par Nathalie Vialaneix, qui aura # lieu à Toulouse entre le 9 et le 12 juillet 2019 :
+
+# - La présentation de UseR! 2019 : [pdf](/diapos/2018_09_25-user2019.pdf)
+```
+
+
+
+---
+
+Ce groupe a besoin de vous ! Si vous souhaitez présenter quelque chose, merci d’envoyer un mail
+à **rug.toulouse @ gmail.com** (sans les espaces autour du `@`).
+Tous les sujets sont les bienvenus, en espérant pouvoir organiser une session introductive 
+(par exemple à R en général, au package ggplot2, au tidyverse, à R markdown, aux bonnes pratiques, etc.) 
+et une session plus spécialisée (présentation d’un nouveau package, introduction au développement de packages,
+shiny, comment R est utilisé dans votre groupe, etc.).
+
+Si vous aimeriez assister à une 
+présentation sur un thème donné, n’hésitez pas à le demander sur le 
+[google group](https://groups.google.com/forum/#!forum/r-toulouse) ou via 
+[twitter](https://twitter.com/RUG_Toulouse).
+Enfin, n’hésitez pas à faire part de l’existence de ce groupe autour de vous.
+
+Bientôt ici même : des infos sur la prochaine rencontre ! 
+
+![](/img/logo.svg)

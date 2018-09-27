@@ -22,7 +22,7 @@ leaflet() %>%
 ```
 
 ## Programme
-- [Marylène Henry](https://twitter.com/henry_marylene) présentera une inititation à `ggplot2` :
+- [Marylène Henry](https://twitter.com/henry_marylene) présentera une initiation à `ggplot2` :
 
 **Réaliser vos visualisations graphiques avec R – initiation au package ggplot2**
 
