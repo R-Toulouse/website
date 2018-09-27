@@ -16,14 +16,6 @@ Vous pouvez retrouver leurs diapos ici :
 - Initiation à l’utilisation du package ggplot2, par Marylène Henry : [pdf](/diapos/2018-09-25_ggplot2 _initiation.pdf)
 - *Symbolic Differentiation of R Code with Deriv Package*, par Serguei Sokol : [pdf](/diapos/2018-09-25_deriv_rug.pdf), [Rmd](https://github.com/R-Toulouse/website/tree/master/static/sources)
 
-```{r, echo=FALSE, eval=FALSE}
-# Nous avons aussi eu une présentation de la prochaine conférence [UseR! 2019](http://www.user2019.fr/), par Nathalie Vialaneix, qui aura # lieu à Toulouse entre le 9 et le 12 juillet 2019 :
-
-# - La présentation de UseR! 2019 : [pdf](/diapos/2018_09_25-user2019.pdf)
-```
-
-
-
 ---
 
 Ce groupe a besoin de vous ! Si vous souhaitez présenter quelque chose, merci d’envoyer un mail
