@@ -11,7 +11,7 @@ tags:
 
 ![](/img/logo.svg)
 
-La rencontre d'octobre 2018 du groupe des utilisatrices et utilisateurs de R de Toulouse est prévu le **jeudi 25 octobre 2018** de **17h30 à 18h30**,
+La rencontre d'octobre 2018 du groupe des utilisatrices et utilisateurs de R de Toulouse est prévue le **jeudi 25 octobre 2018** de **17h30 à 18h30**,
 à l'**amphithéâtre Schwartz de l'Institut de Mathématiques de Toulouse** (métro ligne B, Université Paul Sabatier) :
 
 ```{r plan, echo=FALSE}
