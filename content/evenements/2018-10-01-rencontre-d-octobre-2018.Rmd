@@ -25,7 +25,28 @@ Il s'agit de la même salle que [la dernière fois](https://r-toulouse.netlify.c
 
 ---
 
-**Nous cherchons des oratrices ou orateurs pour cet évènement**, pour assurer une présentation de 20 minutes, suivies de 10 minutes d'échanges avec l'audience.
+## Programme
+
+**La visualisation automatique d'un grand jeu de données**, par Christophe Regouby
+
+Vos collègues vous demandent de contribuer avant la clôture dans 1 heure à un immense tableau *ms-excel* ?
+Un dataset parfaitement inconnu vous tombe dessus ?
+Que faire sinon le visualiser ! 
+Mais il est bien trop tôt dans cette exploration pour passer des heures à peaufiner des commandes *ggplot*.
+Heureusement une *library* magique va vous sauver la vie...
+
+**Quelques pièges du langage R**, par [Guillaume Devailly](https://twitter.com/G_Devailly)
+
+R est un super outil qui permet de faire plein de choses. C'est aussi un langage assez taquin.
+Essayez donc de deviner ce que R retourne lorsqu'on lui demande 
+`0.3/3 == 0.1`, `mean(1, 2, 3, 4, 5)`, ou encore `sample(3.14, size = 5, replace = TRUE)`, puis testez par vous-même !
+Un petit catalogue de tels pièges permet d'apprendre et de s'amuser en même temps.  D'ailleurs, Patrick Burns l'a bien compris,
+et en a recensé tellement qu'il a écrit un livre entier dessus : [The R inferno](https://www.burns-stat.com/documents/books/the-r-inferno/),
+dont cette présentation s'inspire très largement.
+
+---
+
+**Nous cherchons des oratrices ou orateurs pour les prochains évènements**, pour assurer une présentation de 20 minutes, suivies de 10 minutes d'échanges avec l'audience.
 Tous les sujets sont les bienvenus, en espérant pouvoir organiser une session introductive (par exemple à `R` en général, au `tidyverse`, à `R markdown`, aux bonnes pratiques, etc.) et une session plus spécialisée (présentation d'un nouveau *package*, introduction au développement de *packages*, `shiny`, comment R est utilisé dans votre groupe, etc.).
 
 **Nous avons besoins de vous !** Si vous êtes volontaire, merci de nous contacter (par mail : rug.toulouse[at]gmail.com ou twitter à votre convenance, liens en haut à gauche de la page), avec un titre et un petit résumé de votre présentation.
