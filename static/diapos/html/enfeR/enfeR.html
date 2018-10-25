@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>(╯°□°)╯︵ ┻━┻</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Guillaume Devailly" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link rel="stylesheet" href="libs/uo.css" type="text/css" />
+    <link rel="stylesheet" href="libs/uo-fonts.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# (╯°□°)╯︵ ┻━┻
+## C’est l’enfeR : Petits pièges du langage R
+### Guillaume Devailly
+### 2018/10/25
+
+---
+
+class: center
+
+
+
+Fortement inspiré de **The R Inferno** par Patrick Burns
+
+![](img/R_inferno_cover.jpg)
+
+eBook gratuit : [https://www.burns-stat.com/documents/books/the-r-inferno/](www.burns-stat.com/documents/books/the-r-inferno/)
+
+---
+class: inverse, center, middle
+
+# = vs &lt;-
+
+---
+
+# Pleins d'espaces 
+.pull-left[
+
+```r
+x&lt;-1
+x&lt; -1
+x=1
+x=-1
+```
+]
+--
+.pull-right[
+
+```r
+x &lt;- 1
+x &lt; -1
+x = 1
+x = -1
+```
+]
+
+---
+
+# "&lt;-" != "="
+
+```r
+data.frame(
+    a1 &lt;- 1:3
+)
+##   a1....1.3
+## 1         1
+## 2         2
+## 3         3
+
+a1
+## [1] 1 2 3
+
+data.frame(
+    a2 = 1:3
+)
+##   a2
+## 1  1
+## 2  2
+## 3  3
+
+a2
+## Error in eval(expr, envir, enclos): objet 'a2' introuvable
+```
+
+---
+
+# "&lt;-" != "="
+
+```r
+system.time(
+    x &lt;- 1:5
+)
+##    user  system elapsed 
+##       0       0       0
+
+x
+## [1] 1 2 3 4 5
+
+system.time(
+    y = 1:5
+)
+## Error in system.time(y = 1:5): argument inutilisé (y = 1:5)
+
+y
+## Error in eval(expr, envir, enclos): objet 'y' introuvable
+```
+
+---
+class: inverse, center, middle
+
+#Comparaisons
+
+---
+
+
+```r
+x &lt;- 1:5
+x
+```
+
+```
+## [1] 1 2 3 4 5
+```
+
+```r
+x == 2|3
+```
+--
+
+```
+## [1] TRUE TRUE TRUE TRUE TRUE
+```
+--
+
+```r
+x == (2|3)
+```
+--
+
+```
+## [1]  TRUE FALSE FALSE FALSE FALSE
+```
+--
+
+```r
+x == 2 | x == 3
+```
+
+```
+## [1] FALSE  TRUE  TRUE FALSE FALSE
+```
+
+```r
+x %in% c(2, 3)
+```
+
+```
+## [1] FALSE  TRUE  TRUE FALSE FALSE
+```
+
+---
+
+
+```r
+x
+```
+
+```
+## [1] 1 2 3 4 5
+```
+
+```r
+1 &lt; x &lt; 4
+```
+
+```
+## Error: &lt;text&gt;:1:7: '&lt;' inattendu(e)
+## 1: 1 &lt; x &lt;
+##           ^
+```
+
+```r
+1 &lt; x &amp; x &lt; 4
+```
+
+```
+## [1] FALSE  TRUE  TRUE FALSE FALSE
+```
+
+---
+
+
+```r
+0.1/1
+```
+
+```
+## [1] 0.1
+```
+--
+
+```r
+0.1/1 == 0.1
+```
+--
+
+```
+## [1] TRUE
+```
+--
+Tout va vien.
+--
+
+```r
+0.3/3
+```
+--
+
+```
+## [1] 0.1
+```
+--
+
+```r
+0.3/3 == 0.1
+```
+--
+
+```
+## [1] FALSE
+```
+(－‸ლ)
+
+---
+
+# Résumons :
+
+
+```r
+mon_vecteur &lt;- c(0.1/1, 0.2/2, 0.3/3, 0.4/4, 0.5/5, 0.6/6, 0.7/7, 0.8/8)
+mon_vecteur
+```
+
+```
+## [1] 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1
+```
+--
+
+```r
+mon_vecteur == 0.1
+```
+
+```
+## [1]  TRUE  TRUE FALSE  TRUE  TRUE FALSE FALSE  TRUE
+```
+--
+5/8, pas terrible. :-/
+
+---
+
+# Les floats sonts des approximations
+
+
+```r
+print(0.1  , digits = 18)
+## [1] 0.100000000000000006
+
+print(0.3/3, digits = 18)
+## [1] 0.0999999999999999917
+```
+--
+
+```r
+pryr::bytes(0.1  )
+## [1] "3F B9 99 99 99 99 99 9A"
+
+pryr::bytes(0.3/3)
+## [1] "3F B9 99 99 99 99 99 99"
+
+pryr::bits( 0.1  )
+## [1] "00111111 10111001 10011001 10011001 10011001 10011001 10011001 10011010"
+
+pryr::bits( 0.3/3)
+## [1] "00111111 10111001 10011001 10011001 10011001 10011001 10011001 10011001"
+```
+
+---
+
+# Une solution ?
+
+```r
+epsilon &lt;- 10^-10
+
+mon_vecteur
+## [1] 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1
+
+mon_vecteur == 0.1
+## [1]  TRUE  TRUE FALSE  TRUE  TRUE FALSE FALSE  TRUE
+
+abs(mon_vecteur - 0.1) &lt; epsilon
+## [1] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+```
+
+---
+# Redéfinissons '=='
+
+
+```r
+0.3/3 == 0.1
+## [1] FALSE
+
+`==` &lt;- function(x, y, epsilon = 10^-10) {
+    abs(x - y) &lt; epsilon
+}
+
+0.3/3 == 0.1
+## [1] TRUE
+```
+--
+
+```r
+"a" == "a"
+## Error in x - y: argument non numérique pour un opérateur binaire
+```
+--
+Pas bien !
+
+```r
+rm(`==`)
+"a" == "a"
+## [1] TRUE
+```
+
+---
+
+# Une meilleure solution :
+
+```r
+
+`%~=%` &lt;- function(x, y, epsilon = 10^-10) {
+    abs(x - y) &lt; epsilon
+}
+
+0.3/3 == 0.1
+## [1] FALSE
+
+0.3/3 %~=% 0.1
+## [1] Inf
+```
+--
+
+```r
+(0.3/3) %~=% 0.1
+## [1] TRUE
+```
+
+---
+
+# Un problème assez fréquent
+
+
+```r
+my_seq &lt;- seq(0, 0.4, len = 5)
+my_seq
+```
+
+```
+## [1] 0.0 0.1 0.2 0.3 0.4
+```
+
+```r
+my_seq[4]
+```
+
+```
+## [1] 0.3
+```
+
+```r
+my_seq[4] == 0.3
+```
+
+```
+## [1] FALSE
+```
+
+---
+
+# Quizz : NA, NaN, NULL
+.pull-left[
+
+```r
+3L == NA
+
+3L == NaN
+
+3L == NULL
+```
+]
+--
+.pull-right[
+
+```
+## [1] NA
+```
+
+```
+## [1] NA
+```
+
+```
+## logical(0)
+```
+]
+
+---
+
+# Quizz : NA, NaN, NULL
+.pull-left[
+
+```r
+NA == NA
+
+NaN == NaN
+
+NULL == NULL
+```
+]
+--
+.pull-right[
+
+```
+## [1] NA
+```
+
+```
+## [1] NA
+```
+
+```
+## logical(0)
+```
+]
+
+---
+
+# Quizz : NA, NaN, NULL
+.pull-left[
+
+```r
+NA == NaN
+
+NA == NULL
+
+NaN == NULL
+```
+]
+--
+.pull-right[
+
+```
+## [1] NA
+```
+
+```
+## logical(0)
+```
+
+```
+## logical(0)
+```
+]
+
+--
+
+Utilisez `is.na()`, `is.nan()` et `is.null()` pour tester contre `NA`, `NaN` et `NULL`.
+
+```r
+is.null(logical(0))
+```
+
+```
+## [1] FALSE
+```
+
+---
+
+# Inf == Inf
+.pull-left[
+
+```r
+1/0
+
+1/-0
+
+0/0
+
+exp(Inf)
+
+exp(Inf) == log(Inf)
+```
+]
+--
+.pull-right[
+
+```
+## [1] Inf
+```
+
+```
+## [1] -Inf
+```
+
+```
+## [1] NaN
+```
+
+```
+## [1] Inf
+```
+
+```
+## [1] TRUE
+```
+]
+
+--
+
+L'aide de R :
+
+*NaN means ‘Not a Number’*
+--
+
+```r
+is.numeric(NaN)
+## [1] TRUE
+```
+
+---
+class: inverse, middle, center
+
+# Une dispute sur les arguments
+
+---
+
+
+```r
+min(4, 5, 1, 2, 3)
+```
+--
+
+```
+## [1] 1
+```
+--
+
+```r
+max(4, 5, 1, 2, 3)
+```
+--
+
+```
+## [1] 5
+```
+--
+Tout va bien.
+--
+
+```r
+mean(4, 5, 1, 2, 3)
+```
+--
+
+```
+## [1] 4
+```
+--
+Pas d'erreure, pas de *warnings*, un résultat de type attendu.
+(－‸ლ)
+--
+
+```r
+median(4, 5, 1, 2, 3)
+```
+
+```
+## [1] 4
+```
+
+---
+
+# Pas vraiement un problème en pratique :
+
+
+```r
+x &lt;- c(4, 5, 1, 2, 3)
+min(x)
+```
+
+```
+## [1] 1
+```
+
+```r
+max(x)
+```
+
+```
+## [1] 5
+```
+
+```r
+mean(x)
+```
+
+```
+## [1] 3
+```
+
+```r
+median(x)
+```
+
+```
+## [1] 3
+```
+
+---
+
+# "L'échantillonage aléatoire" aléatoire
+
+
+```r
+x &lt;- c(3.14, 1.41, 42)
+
+sample(x, size = 7, replace = TRUE)
+```
+
+```
+## [1]  3.14 42.00  1.41  3.14  1.41  3.14  1.41
+```
+--
+
+```r
+x &lt;- c(3.14)
+
+sample(x, size = 7, replace = TRUE)
+```
+--
+
+```
+## [1] 3 3 3 2 1 1 4
+```
+--
+Vérifier la taille de `x` avant de le passer a `sample()`
+
+---
+class: inverse, center, middle
+
+# Les facteurs accidentels
+## stringsAsFactors = FALSE
+
+---
+
+
+```r
+x &lt;- factor(c(105:100, 105, 104))
+x
+## [1] 105 104 103 102 101 100 105 104
+## Levels: 100 101 102 103 104 105
+x &gt;= 103
+## Warning in Ops.factor(x, 103): '&gt;=' not meaningful for factors
+## [1] NA NA NA NA NA NA NA NA
+```
+--
+
+```r
+as.numeric(x) &gt;= 103
+## [1] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+```
+
+![](img/dog_ball.gif)
+
+---
+
+
+```r
+x &lt;- factor(c(105:100, 105, 104))
+x
+## [1] 105 104 103 102 101 100 105 104
+## Levels: 100 101 102 103 104 105
+x &gt;= 103
+## Warning in Ops.factor(x, 103): '&gt;=' not meaningful for factors
+## [1] NA NA NA NA NA NA NA NA
+```
+
+```r
+as.numeric(x) &gt;= 103
+## [1] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+```
+
+```r
+as.numeric(x)
+## [1] 6 5 4 3 2 1 6 5
+
+as.numeric(as.character(x))
+## [1] 105 104 103 102 101 100 105 104
+
+as.numeric(as.character(x)) &gt;= 103
+## [1]  TRUE  TRUE  TRUE FALSE FALSE FALSE  TRUE  TRUE
+
+as.numeric(levels(x))[x]
+## [1] 105 104 103 102 101 100 105 104
+```
+
+---
+
+# fusions de factors
+
+
+```r
+x &lt;- factor(c(5, 6))
+x
+```
+
+```
+## [1] 5 6
+## Levels: 5 6
+```
+
+```r
+y &lt;- factor(c(10, 11))
+y
+```
+
+```
+## [1] 10 11
+## Levels: 10 11
+```
+
+
+```r
+c(x, y)
+```
+--
+
+```
+## [1] 1 2 1 2
+```
+
+---
+
+# fusions de factors
+
+
+```r
+x
+## [1] 5 6
+## Levels: 5 6
+
+y
+## [1] 10 11
+## Levels: 10 11
+
+factor(c(as.numeric(as.character(x)), as.numeric(as.character(y))))
+## [1] 5  6  10 11
+## Levels: 5 6 10 11
+
+unlist(list(x, y))
+## [1] 5  6  10 11
+## Levels: 5 6 10 11
+```
+
+---
+
+# Factors, encore :
+
+```r
+df &lt;- data.frame(a = 2:3, b = c("x", "y"))
+df
+##   a b
+## 1 2 x
+## 2 3 y
+
+df[1, ]
+##   a b
+## 1 2 x
+
+as.character(df[1, ])
+## [1] "2" "1"
+```
+
+![](img/poubelle.gif)
+
+---
+
+# Factors, encore :
+
+```r
+
+df[1, , drop = TRUE]
+## $a
+## [1] 2
+## 
+## $b
+## [1] x
+## Levels: x y
+
+df &lt;- data.frame(a = 2:3, b = c("x", "y"), stringsAsFactors = FALSE)
+df[1, ]
+##   a b
+## 1 2 x
+```
+
+---
+class: inverse, center, middle
+
+# Extractions
+
+---
+
+
+```r
+tb1 &lt;- data.frame(x1 = 1:5)
+tb1
+##   x1
+## 1  1
+## 2  2
+## 3  3
+## 4  4
+## 5  5
+
+tb2 &lt;- tb1[c(2, 4, 5), ]
+```
+--
+
+```r
+tb2
+## [1] 2 4 5
+```
+--
+
+```r
+tb2 &lt;- tb1[c(2, 4, 5), , drop = FALSE]
+tb2
+##   x1
+## 2  2
+## 4  4
+## 5  5
+```
+
+---
+
+# Une petite énigme
+
+
+
+
+```r
+i
+```
+
+```
+## [1] 3
+```
+
+```r
+x &lt;- 1:5
+x
+```
+
+```
+## [1] 1 2 3 4 5
+```
+
+
+```r
+x[i]
+```
+--
+
+```
+## [1] 2
+```
+--
+
+```r
+as.integer(i)
+```
+
+```
+## [1] 2
+```
+--
+
+```r
+i &lt;- 3 - 10^-15
+```
+
+---
+
+
+```r
+myMat &lt;- matrix(1:6, ncol = 2)
+myMat
+##      [,1] [,2]
+## [1,]    1    4
+## [2,]    2    5
+## [3,]    3    6
+```
+
+.pull-left[
+
+```r
+df1 &lt;- data.frame(X = 101:103,
+                  Y = myMat)
+df1
+##     X Y.1 Y.2
+## 1 101   1   4
+## 2 102   2   5
+## 3 103   3   6
+```
+]
+.pull-right[
+
+```r
+df2 &lt;- data.frame(X = 101:103)
+df2$Y &lt;- myMat
+df2
+##     X Y.1 Y.2
+## 1 101   1   4
+## 2 102   2   5
+## 3 103   3   6
+```
+]
+
+---
+
+
+```r
+myMat &lt;- matrix(1:6, ncol = 2)
+myMat
+##      [,1] [,2]
+## [1,]    1    4
+## [2,]    2    5
+## [3,]    3    6
+```
+
+.pull-left[
+
+```r
+df1 &lt;- data.frame(X = 101:103,
+                  Y = myMat)
+df1
+##     X Y.1 Y.2
+## 1 101   1   4
+## 2 102   2   5
+## 3 103   3   6
+dim(df1)
+## [1] 3 3
+df1$Y
+## NULL
+df1$Y.1
+## [1] 1 2 3
+```
+]
+.pull-right[
+
+```r
+df2 &lt;- data.frame(X = 101:103)
+df2$Y &lt;- myMat
+df2
+##     X Y.1 Y.2
+## 1 101   1   4
+## 2 102   2   5
+## 3 103   3   6
+dim(df2)
+## [1] 3 2
+df2$Y
+##      [,1] [,2]
+## [1,]    1    4
+## [2,]    2    5
+## [3,]    3    6
+df2$Y.1
+## NULL
+```
+]
+
+---
+class: inverse, center, middle
+
+# Error: cannot allocate vector of size...
+## Nouvelle édition
+
+---
+
+
+```r
+x &lt;- 1:(10^12)
+head(x)
+## [1] 1 2 3 4 5 6
+
+tail(x)
+## [1] 1e+12 1e+12 1e+12 1e+12 1e+12 1e+12
+
+x[1]
+## [1] 1
+
+x[5]
+## [1] 5
+
+x[12345]
+## [1] 12345
+```
+--
+
+```r
+x[5] &lt;- 2
+## Error: impossible d'allouer un vecteur de taille 7450.6 Go
+
+x[5] &lt;- 2L
+## Error: impossible d'allouer un vecteur de taille 7450.6 Go
+
+x
+## Error: impossible d'allouer un vecteur de taille 7450.6 Go
+```
+
+---
+
+![](img/large_vect.png)
+--
+
+# La magie d'ALTREP
+
+
+```r
+x[2] &lt;- 1
+```
+
+```
+## Error: impossible d'allouer un vecteur de taille 7450.6 Go
+```
+
+```r
+sum(x)
+```
+
+```
+## [1] 5e+23
+```
+
+---
+
+# ALTREP
+
+Plus d'infos : 
++ [ftp://stat.ethz.ch/Teaching/maechler/R/eRum_2018_ProgR-ALTREP.html#20](ftp://stat.ethz.ch/Teaching/maechler/R/eRum_2018_ProgR-ALTREP.html#20)
+
++ [http://homepage.stat.uiowa.edu/~luke/talks/nzsa-2017.pdf](http://homepage.stat.uiowa.edu/~luke/talks/nzsa-2017.pdf)
+
++ [https://svn.r-project.org/R/branches/ALTREP/ALTREP.html](https://svn.r-project.org/R/branches/ALTREP/ALTREP.html)
+
+---
+
+# Pour aller plus loin
+
++ The R inferno (Patrick Burns) : [www.burns-stat.com/documents/books/the-r-inferno/](https://www.burns-stat.com/documents/books/the-r-inferno/)
+
++ C'est l'enfeR : [bioinfo-fr.net/cest-lenfer](https://bioinfo-fr.net/cest-lenfer)
+
++ Petite collection d'exemples : [github.com/EdinbR/edinbr-talks/blob/master/2015-11-18/Rinferno.R](https://github.com/EdinbR/edinbr-talks/blob/master/2015-11-18/Rinferno.R)
+
+---
+
+# Bonus
+
+
+```r
+T
+## [1] TRUE
+
+T &lt;- FALSE
+
+T
+## [1] FALSE
+```
+
+
+```r
+c(5, 10, 12)
+## [1]  5 10 12
+
+c &lt;- function(...) list(...)
+
+c(5, 10, 12)
+## [[1]]
+## [1] 5
+## 
+## [[2]]
+## [1] 10
+## 
+## [[3]]
+## [1] 12
+```
+
+---
+
+# Bonus
+
+
+```r
+plus_deux &lt;- function(x) {
+    return(x + 2)
+}
+
+plus_deux(5)
+## [1] 7
+
+return &lt;- function(x) x + 10
+
+plus_deux(5)
+## [1] 17
+```
+
+
+```r
+rm(T, c, return)
+```
+
+---
+
+# Bonus
+
+
+```r
+mon_test &lt;- c(TRUE, FALSE, FALSE)
+
+if(mon_test) {
+    message("Succés !")
+} else {
+    message("Echec !")
+}
+```
+
+```
+## Warning in if (mon_test) {: la condition a une longueur &gt; 1 et seul le
+## premier élément est utilisé
+```
+
+```
+## Succés !
+```
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script>
+(function() {
+  var i, text, code, codes = document.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+})();
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
