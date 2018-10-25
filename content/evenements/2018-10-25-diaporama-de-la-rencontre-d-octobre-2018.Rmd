@@ -1,20 +1,21 @@
 ---
-title: Diaporamas de la rencontre de Septembre 2018
+title: Diaporama de la rencontre d'Octobre 2018
 author: Guillaume Devailly
-date: '2018-09-27'
-slug: diaporamas-de-la-rencontre-de-septembre-2018
+date: '2018-10-25'
+slug: diaporama-de-la-rencontre-d-octobre-2018
 categories:
   - Diaporamas
 tags:
   - Diaporamas
 ---
 
-Merci beaucoup à Marylène Henry et Serguei Sokol pour leurs présentations.
+
+Merci beaucoup à Christophe Regouby et Guillaume Devailly pour leurs présentations.
 
 Vous pouvez retrouver leurs diapos ici :
 
-- Initiation à l’utilisation du package ggplot2, par Marylène Henry : [pdf](/diapos/2018-09-25_ggplot2_initiation.pdf)
-- *Symbolic Differentiation of R Code with Deriv Package*, par Serguei Sokol : [pdf](/diapos/2018-09-25_deriv_rug.pdf), [Rmd](https://github.com/R-Toulouse/website/tree/master/static/sources)
+- Datavisualisation automatique de grand jeux de données, par Christophe Regouby : [pdf](/diapos/2018-10-25_plotluck.pdf)
+- C'est l'enfeR : petits pièges du langage R, par Guillaume Devailly : [html](/diapos/html/enfeR/enfeR.html), [pdf](/diapos/2018-10-25_enfeR.pdf), [Rmd](https://github.com/R-Toulouse/website/blob/master/static/diapos/html/enfeR/enfeR.Rmd)
 
 ---
 
