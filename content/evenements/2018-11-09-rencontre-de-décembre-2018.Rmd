@@ -16,7 +16,7 @@ tags:
 La rencontre de Décembre 2018 du groupe des utilisatrices et utilisateurs de R de Toulouse est prévue le **jeudi 6 décembre  2018** de **17h30 à 18h30**,
 à l'**amphithéâtre Schwartz de l'Institut de Mathématiques de Toulouse** (métro ligne B, Université Paul Sabatier) :
 
-```{r plan2, echo=FALSE}
+```{r plan3, echo=FALSE}
 library(leaflet)
 leaflet() %>%
   addTiles() %>%  # Add default OpenStreetMap map tiles
