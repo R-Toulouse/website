@@ -22,6 +22,7 @@ enableEmoji = true
     highlightLanguages = ["R", "go", "haskell", "kotlin", "scala", "swift"]
     copyright = "Propulsé par [Blogdown](https://github.com/rstudio/blogdown), [Hugo](https://gohugo.io), [Minimal](https://github.com/calintat/minimal), [GitHub](https://github.com/) et [netlify](https://www.netlify.com/)."
     favicon = "/img/logo.svg"
+    dateFormat = "2006-01-02"
 
 
 [[menu.main]]
