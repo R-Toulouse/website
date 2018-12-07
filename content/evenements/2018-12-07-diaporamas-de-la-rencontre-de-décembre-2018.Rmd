@@ -1,0 +1,36 @@
+---
+title: Diaporamas de la rencontre de décembre 2018
+author: Guillaume Devailly
+date: '2018-12-07'
+slug: diaporamas-de-la-rencontre-de-décembre-2018
+categories:
+  - Diaporamas
+tags:
+  - Diaporamas
+---
+
+Merci beaucoup à Emeline Flajollet et Laurent Cauquil pour leurs présentations.
+
+Vous pouvez retrouver leurs diapos ici :
+
+- Manipuler un dataset en R avec la suite tidyverse: quelques astuces, par Emeline Flajollet : [pdf](/diapos/2018-12-06_tidyverse.pdf)
+- METACODER, par Laurent Cauquil :  [pdf](/diapos/2018-12-06_metacoder.pdf)
+
+---
+
+Ce groupe a besoin de vous ! Si vous souhaitez présenter quelque chose, merci d’envoyer un mail
+à **rug.toulouse @ gmail.com** (sans les espaces autour du `@`).
+Tous les sujets sont les bienvenus, en espérant pouvoir organiser une session introductive 
+(par exemple à R en général, à R markdown, aux bonnes pratiques, etc.) 
+et une session plus spécialisée (présentation d’un nouveau package, introduction au développement de packages,
+shiny, comment R est utilisé dans votre groupe, etc.).
+
+Si vous aimeriez assister à une 
+présentation sur un thème donné, n’hésitez pas à le demander sur le 
+[google group](https://groups.google.com/forum/#!forum/r-toulouse) ou via 
+[twitter](https://twitter.com/RUG_Toulouse).
+Enfin, n’hésitez pas à faire part de l’existence de ce groupe autour de vous.
+
+Bientôt ici même : des infos sur la prochaine rencontre ! 
+
+![](/img/logo.svg)
