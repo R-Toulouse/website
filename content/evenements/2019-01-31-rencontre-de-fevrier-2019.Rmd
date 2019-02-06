@@ -23,7 +23,33 @@ Attention, il ne s'agit d'une **autre salle que la dernière fois**. L'amphithé
 
 ---
 
-Le programme de la rencontre sera annoncé prochainement, ici même.
+## Programme
+
+**Vitesses d’exécution dans R : comparaisons de base `R`, `dplyr` et `data.table`**, par Antoine Sireyjol ([site personnel](https://antoinesir.rbind.io), [twitter](https://twitter.com/AntoineSyr))
+
+Cette présentation a pour but de comparer les différentes options que sont base R, dplyr et data.table en terme de temps d’exécution. Elle présentera pour cela quelques instructions classiquement utilisées dans R déclinées pour chacune de ces options. Quelques astuces d’optimisation seront également présentées.
+
+Antoine Sireyjol est statisticien freelance après 4 années au sein du service statistique du Ministère des Solidarités et de la Santé, la Drees. Il travaille en ce moment sur la migration d’outils de la Drees de SAS vers R.
+
+
+**`RJags`, se lancer dans les statistiques Bayésiennes avec R**, par Sonia Eynard
+
+JAGS (Just Another Gibs Sampler) est implémenté sous la forme d'un package R pour permettre l'analyse Bayésienne de données. Nous verrons ensemble comment installer et utiliser ce package sur des exemple simples pour ce lancer dans l'analyse Bayésienne. Voir 
+[ici](https://channel9.msdn.com/Events/useR-international-R-User-conferences/useR-International-R-User-2017-Conference/Introduction-to-Bayesian-inference-with-JAGS),
+[ici](https://www.rdocumentation.org/packages/rjags/versions/4-8),
+ou [là](https://jeromyanglim.blogspot.com/2012/04/getting-started-with-jags-rjags-and.html).
+
+
+---
+
+Vous pouvez dès à présent soumettre une proposition pour un oral ou un poster pour la conférence
+[UseR! 2019](http://user2019.r-project.org/abstracts/) qui se tiendra du 9 au 12 Juillet à Toulouse.
+
+User! 2019 [organise aussi](http://user2019.r-project.org/datathon/) un *Datathon* dont le gagnant pourra venir gratuitement à la conférence.
+Les rapports sont à rendre avant le 1er Mars 2019.
+
+Toulouse DataViz organise un nouveau Hackathon autour de la visualisation de données. [Inscrivez-vous](http://toulouse-dataviz.fr/hackaviz-2019-2)
+vite !
 
 ---
 
