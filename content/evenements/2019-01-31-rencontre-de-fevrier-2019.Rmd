@@ -9,7 +9,7 @@ tags:
   - Rencontres
 ---
 
-La rencontre de Décembre 2018 du groupe des utilisatrices et utilisateurs de R de Toulouse est prévue le **jeudi 14 février 2019** de **17h30 à 18h30**,
+La rencontre de Février 2019 du groupe des utilisatrices et utilisateurs de R de Toulouse est prévue le **jeudi 14 février 2019** de **17h30 à 18h30**,
 à l'**amphithéâtre Riquet de l'Institut National des Sciences Appliquées (INSA) de Toulouse** (métro ligne B, Faculté de Pharmacie) :
 
 ```{r plan3, echo=FALSE}
