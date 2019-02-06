@@ -19,7 +19,7 @@ leaflet() %>%
   addMarkers(lat = 43.57207, lng = 1.46610, popup = "Amphi Riquet, INSA")
 ```
 
-Attention, il ne s'agit d'une **autre salle que la dernière fois**. L'amphithéatre est au rez-de-chaussé du bâtiement A1 de l'INSA.
+Attention, il ne s'agit d'une **autre salle que la dernière fois**. L'amphithéatre est au rez-de-chaussé du bâtiment A1 de l'INSA.
 
 ---
 
