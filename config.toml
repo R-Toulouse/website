@@ -61,11 +61,11 @@ enableEmoji = true
     weight = 2
 
 [[menu.icon]]
-    url = "https://r-toulouse.slack.com"
+    url = "https://r-grrr.slack.com"
     name = "slack"
     weight = 3
 
 [[menu.icon]]
-    url = "https://groups.google.com/forum/#!forum/r-toulouse"
+    url = "https://groupes.renater.fr/sympa/info/r-toulouse"
     name = "envelope-o"
     weight = 4
