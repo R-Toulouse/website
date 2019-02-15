@@ -1,0 +1,35 @@
+---
+title: Diaporamas de la rencontre de février 2019
+author: Guillaume Devailly
+date: '2019-02-15'
+slug: diaporamas-de-la-rencontre-de-février-2019
+categories:
+  - Diaporamas
+tags:
+  - Diaporamas
+---
+
+Merci beaucoup à [Sonia Eynard](https://twitter.com/sonia_eynard) et [Antoine Sireyjol](https://twitter.com/AntoineSyr) pour leurs présentations.
+
+Vous pouvez retrouver leurs diapos ici :
+
+- Vitesses d’exécution dans R : comparaisons de base R, dplyr et data.table, par Antoine Sireyjol : [pdf](/diapos/2019-02-14_vitesses_R.pdf), [Rmd](https://github.com/AntoineSir/Presentation---R-Toulouse/blob/master/vitesses_R.Rmd)
+- RJags: Se lancer dans les statistiques Bayésiennes avec R, par Sonia Eynard :  [pdf](/diapos/2019-02-14_RJags.pdf)
+
+---
+
+Pour vous tenir au courant de nos prochains évènements, pourquoi ne pas vous abonner à notre [mailing list](https://groupes.renater.fr/sympa/info/r-toulouse)
+ou notre [compte twitter](https://twitter.com/RUG_Toulouse).
+
+Ce groupe a besoin de vous ! Si vous souhaitez présenter quelque chose, merci d’envoyer un mail
+à **rug.toulouse @ gmail.com** (sans les espaces autour du `@`).
+Tous les sujets sont les bienvenus, en espérant pouvoir organiser une session introductive 
+(par exemple à R en général, à R markdown, aux bonnes pratiques, etc.) 
+et une session plus spécialisée (présentation d’un nouveau package, introduction au développement de packages,
+shiny, comment R est utilisé dans votre groupe, etc.).
+
+Enfin, n’hésitez pas à faire part de l’existence de ce groupe autour de vous.
+
+Bientôt ici même : des infos sur la prochaine rencontre ! 
+
+![](/img/logo.svg)
