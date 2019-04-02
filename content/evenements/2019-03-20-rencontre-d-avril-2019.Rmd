@@ -1,5 +1,5 @@
 ---
-title: Rencontre d'Avril 2019
+title: Rencontre de Mai 2019
 author: Guillaume Devailly
 date: '2019-03-20'
 slug: rencontre-d-avril-2019
@@ -10,7 +10,9 @@ tags:
   - Rencontres
 ---
 
-La prochaine du groupe des utilisatrices et utilisateurs de R de Toulouse est prévue le **mardi 23 avril 2019** de **17h00 à 18h00**,
+**Attention, changement de date!**
+
+La prochaine du groupe des utilisatrices et utilisateurs de R de Toulouse est prévue le **lundi 6 mai 2019** de **17h00 à 18h00**,
 à l'**amphithéâtre Schwartz de l'Institut de Mathématiques de Toulouse** (métro ligne B, Université Paul Sabatier) :
 
 ```{r plan, echo=FALSE}
