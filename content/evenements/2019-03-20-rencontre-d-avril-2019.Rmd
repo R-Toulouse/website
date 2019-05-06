@@ -30,7 +30,7 @@ leaflet() %>%
 
 Shiny est un package R qui permet de construire facilement une application dynamique et de la rendre accessible dans une webpage ou dans un rapport Rmarkdown, sans aucune connaissance en développement web (html, CSS, javascript, ...) en utilisant uniquement R. Grâce à quelques fonctions, Shiny permet de combiner le pouvoir en calcul R avec l'interactivité d'une page web. Cette présentation montrera un petit aperçu de son potentiel.
 
-**Présentation du package GADMTools: Manipulate, assemble, export GADM maps. Create 'choropleth', 'isopleth', dots plot, proportional dots and more** par. Heval Çîya
+**Présentation du package GADMTools: Manipulate, assemble, export GADM maps. Create 'choropleth', 'isopleth', dots plot, proportional dots and more** par Jean Pierre Decorps
 
 ---
 
