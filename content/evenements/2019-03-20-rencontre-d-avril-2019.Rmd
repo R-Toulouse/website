@@ -12,7 +12,7 @@ tags:
 
 **Attention, changement de date!**
 
-La prochaine du groupe des utilisatrices et utilisateurs de R de Toulouse est prévue le **lundi 6 mai 2019** de **17h00 à 18h00**,
+La prochaine du groupe des utilisatrices et utilisateurs de R de Toulouse est prévue le **lundi 6 mai 2019** de **17h00 à 18h30**,
 à l'**amphithéâtre Schwartz de l'Institut de Mathématiques de Toulouse** (métro ligne B, Université Paul Sabatier) :
 
 ```{r plan, echo=FALSE}
@@ -26,9 +26,11 @@ leaflet() %>%
 
 ## Programme
 
-**Introduction à Shiny**, par Marion Aguirrebengoa
+**Aperçu du package Shiny, ou comment construire une application web dynamique directement depuis R-Studio ?**, par Marion Aguirrebengoa
 
-**TBA**: nous recherchons une oratrice ou un orateur, tout sujets en lien avec R, tout niveau. Nous contacter : rug.toulouse[at]gmail.com
+Shiny est un package R qui permet de construire facilement une application dynamique et de la rendre accessible dans une webpage ou dans un rapport Rmarkdown, sans aucune connaissance en développement web (html, CSS, javascript, ...) en utilisant uniquement R. Grâce à quelques fonctions, Shiny permet de combiner le pouvoir en calcul R avec l'interactivité d'une page web. Cette présentation montrera un petit aperçu de son potentiel.
+
+**Présentation du package GADMTools: Manipulate, assemble, export GADM maps. Create 'choropleth', 'isopleth', dots plot, proportional dots and more** par. Heval Çîya
 
 ---
 
