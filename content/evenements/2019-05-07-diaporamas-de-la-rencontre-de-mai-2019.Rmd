@@ -1,0 +1,30 @@
+---
+title: Diaporamas de la rencontre de mai 2019
+author: Guillaume Devailly
+date: '2019-05-07'
+slug: diaporamas-de-la-rencontre-de-mai-2019
+categories:
+  - Diaporamas
+tags:
+  - Diaporamas
+  - shiny
+---
+
+Merci beaucoup à Marion Aguirrebengoa et Jean-Pierre Decorps pour leurs présentations.
+
+Vous pouvez retrouver leurs diapos ici :
+
+- Aperçu du package Shiny, ou comment construire une application web dynamique directement depuis R-Studio ? par Marion Aguirrebengoa : [pdf](/diapos/2019-05-06_shiny.pdf)
+- GADMtools, par Jean-Pierre Decorps :  prochainement
+
+---
+
+Ce groupe a besoin de vous ! Si vous souhaitez présenter quelque chose, merci d’envoyer un mail
+à **rug.toulouse @ gmail.com** (sans les espaces autour du `@`).
+Tous les sujets sont les bienvenus !
+
+N’hésitez pas non plus à faire part de l’existence de ce groupe autour de vous.
+
+Bientôt ici même : des infos sur la prochaine rencontre.
+
+![](/img/logo.svg)
