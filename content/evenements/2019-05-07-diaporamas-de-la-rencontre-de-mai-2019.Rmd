@@ -15,7 +15,7 @@ Merci beaucoup à Marion Aguirrebengoa et Jean-Pierre Decorps pour leurs présen
 Vous pouvez retrouver leurs diapos ici :
 
 - Aperçu du package Shiny, ou comment construire une application web dynamique directement depuis R-Studio ? par Marion Aguirrebengoa : [pdf](/diapos/2019-05-06_shiny.pdf)
-- GADMtools, par Jean-Pierre Decorps :  prochainement
+- GADMtools, par Jean-Pierre Decorps : [pdf](/diapos/2019-05-06_GADMTools.pdf)
 
 ---
 
