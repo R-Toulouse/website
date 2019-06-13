@@ -12,14 +12,19 @@ tags:
 La saison 2018 - 2019 de rencontres du *R user group* de Toulouse s’achèvera en beauté lors de la conférence [useR! 2019](http://www.user2019.fr/)
 à Toulouse du 9 au 12 juillet. Nous y présenterons un poster résumant les activités du groupe.
 
-![screenshot useR! 2019](/img/screenshot_useR2019.jpg)
+![](/img/screenshot_useR2019.jpg)
 
 Les rencontres de l'année scolaire 2019 - 2020 auront lieux aux dates suivantes (sous réserve de modifications) :
-+ le jeudi 19 septembre 2019 de 17h à 18h
-+ le jeudi 21 novembre 2019 de 17h à 18h30
-+ le jeudi 30 janvier 2020 de 17h à 18h30
-+ le jeudi 26 mars 2020 de 17h à 18h30
-+ le jeudi 28 mai 2020 de 17h à 18h30
+
+- le jeudi 19 septembre 2019 de 17h à 18h
+
+- le jeudi 21 novembre 2019 de 17h à 18h30
+
+- le jeudi 30 janvier 2020 de 17h à 18h30
+
+- le jeudi 26 mars 2020 de 17h à 18h30
+
+- le jeudi 28 mai 2020 de 17h à 18h30
 
 Notez-les dès à présent dans vos agenda ! Ces rencontres auront probablement lieux sur
 le campus de l'Université Paul Sabatier (métro ligne B).
@@ -31,7 +36,7 @@ Nous avons besoins d'oratrices et d'orateurs pour y assurer des présentations e
 présentations d'un *package*, bonne pratiques, retour d'expériences, tutoriels, etc.
 Tous sujets et tous niveaux bienvenus !
 Manifestez-vous en remplissant [ce tableau](https://docs.google.com/spreadsheets/d/13oawsfSFrW76pTG7hvoa7_3yBJzVJ5CAgLTk6ANftJE/edit?usp=sharing)
-ou en nous écrivant directement à *rug.toulouse arobase gmail.com*.
+ou en nous écrivant directement à *rug.toulouse* arobase *gmail.com*.
 
 ![](/img/logo.svg)
 
