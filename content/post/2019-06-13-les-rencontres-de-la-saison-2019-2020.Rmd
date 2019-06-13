@@ -1,0 +1,45 @@
+---
+title: Les rencontres de la saison 2019-2020
+author: Guillaume Devailly
+date: '2019-06-13'
+slug: les-rencontres-de-la-saison-2019-2020
+categories:
+  - Rencontres
+tags:
+  - Rencontres
+---
+
+La saison 2018 - 2019 de rencontres du *R user group* de Toulouse s’achèvera en beauté lors de la conférence [useR! 2019](http://www.user2019.fr/)
+à Toulouse du 9 au 12 juillet. Nous y présenterons un poster résumant les activités du groupe.
+
+![screenshot useR! 2019](/img/screenshot_useR2019.jpg)
+
+Les rencontres de l'année scolaire 2019 - 2020 auront lieux aux dates suivantes (sous réserve de modifications) :
++ le jeudi 19 septembre 2019 de 17h à 18h
++ le jeudi 21 novembre 2019 de 17h à 18h30
++ le jeudi 30 janvier 2020 de 17h à 18h30
++ le jeudi 26 mars 2020 de 17h à 18h30
++ le jeudi 28 mai 2020 de 17h à 18h30
+
+Notez-les dès à présent dans vos agenda ! Ces rencontres auront probablement lieux sur
+le campus de l'Université Paul Sabatier (métro ligne B).
+
+Pour rappelle, il s'agit de rencontres gratuites, sans inscriptions,
+ouvertes à tou·te·s, académiques, professionnels et amateurs, débutants ou confirmés.
+
+Nous avons besoins d'oratrices et d'orateurs pour y assurer des présentations en liens avec R :
+présentations d'un *package*, bonne pratiques, retour d'expériences, tutoriels, etc.
+Tous sujets et tous niveaux bienvenus !
+Manifestez-vous en remplissant [ce tableau](https://docs.google.com/spreadsheets/d/13oawsfSFrW76pTG7hvoa7_3yBJzVJ5CAgLTk6ANftJE/edit?usp=sharing)
+ou en nous écrivant directement à *rug.toulouse arobase gmail.com*.
+
+![](/img/logo.svg)
+
+Pour être tenu informé de nos activités, n'hésitez pas à vous abonner à notre 
+[mailing list](https://groupes.renater.fr/sympa/info/r-toulouse) et à nous suivre sur [twitter](https://twitter.com/RUG_Toulouse).
+
+Vous trouverez les diaporamas des présentations de l'année 2018 - 2019 sur [cette page](https://r-toulouse.netlify.com/tags/diaporamas/).
+
+Le *R user group* de Toulouse est un groupe ouvert, n'hésitez pas à organiser
+d'autres évènements à des dates, horaires, et lieux qui vous conviendriez mieux. 
+Nous serons très heureux de diffuser l'information ici même.

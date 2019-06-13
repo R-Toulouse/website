@@ -12,3 +12,8 @@ tags: []
 R Toulouse est un [Groupe d'uilisatrices et d'utilisateurs de R](https://jumpingrivers.github.io/meetingsR/r-user-groups.html) à Toulouse.
 Il est ouvert à tou·te·s, quelques soit le niveau, le domaine, le statut. Si vous participez à un de nos évènements, merci de respecter notre [code de conduite](code-de-conduite/).
 
+Le comité d'organisation est pour l'instant constituté de :
++ Marion Aguirrebengoa
++ Laurent Cauquil
++ Guillaume Devailly
+
