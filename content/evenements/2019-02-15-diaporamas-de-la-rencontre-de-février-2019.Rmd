@@ -7,6 +7,9 @@ categories:
   - Diaporamas
 tags:
   - Diaporamas
+  - dplyr
+  - data.table
+  - RJags
 ---
 
 Merci beaucoup à [Sonia Eynard](https://twitter.com/sonia_eynard) et [Antoine Sireyjol](https://twitter.com/AntoineSyr) pour leurs présentations.

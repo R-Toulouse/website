@@ -7,6 +7,8 @@ categories:
   - Diaporamas
 tags:
   - Diaporamas
+  - metacoder
+  - tidyverse
 ---
 
 Merci beaucoup à Emeline Flajollet et Laurent Cauquil pour leurs présentations.

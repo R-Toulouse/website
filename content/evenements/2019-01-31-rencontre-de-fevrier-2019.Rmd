@@ -7,6 +7,9 @@ categories:
   - Rencontres
 tags:
   - Rencontres
+  - dplyr
+  - data.table
+  - RJags
 ---
 
 La rencontre de Février 2019 du groupe des utilisatrices et utilisateurs de R de Toulouse est prévue le **jeudi 14 février 2019** de **17h30 à 18h30**,
