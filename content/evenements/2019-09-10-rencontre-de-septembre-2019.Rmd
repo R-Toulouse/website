@@ -27,10 +27,10 @@ leaflet() %>%
 ## Programme
 
 **Présentation du package purrr***, par [Guillaume Devailly](https://twitter.com/G_Devailly)
-Les boucles ont la fâcheuse réputation d'être lente en R. Elles ne le sont pas, mais pour un certain nombre 
+Les boucles ont la fâcheuse réputation d'être lentes en R. Elles ne le sont pas, mais pour un certain nombre 
 d'autres raisons, présentées durant l'exposé, la communauté s'est tournée vers des fonctions telles que 
 `lapply()` ou `vapply()`. Le package `purrr` reprend cette philosophie et y applique les principes du `tidyverse`.
-Différentes fonctions du package `purrr` seront présentés avec des exemples d'exploration d'une API REST 
+Différentes fonctions du package `purrr` seront présentées avec des exemples d'exploration d'une API REST 
 sur les [pokémon](https://pokeapi.co/).
 
 **Analyse de la dépendance avec R, une brève introduction aux copules**, par [Tom Rohmer](http://www.cmap.polytechnique.fr/~tom.rohmer/)
