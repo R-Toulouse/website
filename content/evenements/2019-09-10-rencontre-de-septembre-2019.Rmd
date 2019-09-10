@@ -11,7 +11,7 @@ tags:
   - statistiques
 ---
 
-La prochaine du groupe des utilisatrices et utilisateurs de R de Toulouse est prévue le **lundi 6 mai 2019** de **17h00 à 18h30**,
+La prochaine du groupe des utilisatrices et utilisateurs de R de Toulouse est prévue le **jeudi 19 septembre 2019** de **17h00 à 18h30**,
 à l'**amphithéâtre Schwartz de l'Institut de Mathématiques de Toulouse** (métro ligne B, Université Paul Sabatier) :
 
 ```{r plan, echo=FALSE}
