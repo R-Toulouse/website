@@ -1,0 +1,48 @@
+---
+title: Rencontre de Septembre 2019
+author: Guillaume Devailly
+date: '2019-09-10'
+slug: rencontre-de-septembre-2019
+categories:
+  - Rencontres
+tags:
+  - purrr
+  - copules
+  - statistiques
+---
+
+La prochaine du groupe des utilisatrices et utilisateurs de R de Toulouse est prévue le **lundi 6 mai 2019** de **17h00 à 18h30**,
+à l'**amphithéâtre Schwartz de l'Institut de Mathématiques de Toulouse** (métro ligne B, Université Paul Sabatier) :
+
+```{r plan, echo=FALSE}
+library(leaflet)
+leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  addMarkers(lat = 43.56162, lng = 1.46577, popup = "Institut de Mathématiques de Toulouse")
+```
+
+
+---
+
+## Programme
+
+**Présentation du package purrr***, par [Guillaume Devailly](https://twitter.com/G_Devailly)
+Les boucles ont la fâcheuse réputation d'être lente en R. Elles ne le sont pas, mais pour un certain nombre 
+d'autres raisons, présentées durant l'exposé, la communauté s'est tournée vers des fonctions telles que 
+`lapply()` ou `vapply()`. Le package `purrr` reprend cette philosophie et y applique les principes du `tidyverse`.
+Différentes fonctions du package `purrr` seront présentés avec des exemples d'exploration d'une API REST 
+sur les [pokémon](https://pokeapi.co/).
+
+**Analyse de la dépendance avec R, une brève introduction aux copules**, par [Tom Rohmer](http://www.cmap.polytechnique.fr/~tom.rohmer/)
+
+L’étude des copules est un phénomène relativement récent et en plein essor. Ces dernières permettent notamment de caractériser la dépendance entre les différentes composantes de données multivariées. Elles sont ainsi utilisées dans de nombreuses applications, que ce soit en hydrologie, finance ou encore en génétique.  Dans cette présentation, j’introduirai cette notion que j’illustrerai au travers d’un exemple concret et d’une application `shiny`. Enfin je présenterai brièvement le package R `npcopTest` permettant de détecter un changement dans la dépendance entre les composantes d’observations multivariées.
+
+---
+
+À l'issue de cette rencontre, nous vous proposons de nous retrouver au Pub
+l'Oxford, 3 Avenue Tolosane, 31520 Ramonville-Saint-Agne,
+pour fêter la rentrée et refaire le monde.
+
+Ces rencontres sont gratuites, ouvertes à toutes et tous, académiques, professionnels et amateurs, débutants ou confirmés.
+
+N'hésitez pas à diffuser l'annonce autour de vous !
