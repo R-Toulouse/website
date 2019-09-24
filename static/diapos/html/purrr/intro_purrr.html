@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>Petite introduction au package purrr</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Guillaume Devailly" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link rel="stylesheet" href="libs\uo.css" type="text/css" />
+    <link rel="stylesheet" href="libs\uo-fonts.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Petite introduction au package purrr
+### Guillaume Devailly
+### inra
+### 2019/09/17
+
+---
+
+class: center
+
+# Je veux en savoir plus sur Pikachu
+
+
+
+--
+
+![:img_scale 80%](img/PokéAPI.png)
+
+---
+
+
+```r
+library(purrr)    # the package I'm going to present
+library(jsonlite) # importing JSON data as R list
+library(dplyr)    # imported for tible, pipe, etc.
+```
+---
+
+
+```r
+pikachu &lt;- jsonlite::fromJSON(
+    "https://pokeapi.co/api/v2/pokemon/pikachu"      
+)
+str(pikachu, max.level = 1)
+## List of 17
+##  $ abilities               :'data.frame':	2 obs. of  3 variables:
+##  $ base_experience         : int 112
+##  $ forms                   :'data.frame':	1 obs. of  2 variables:
+##  $ game_indices            :'data.frame':	20 obs. of  2 variables:
+##  $ height                  : int 4
+##  $ held_items              :'data.frame':	2 obs. of  2 variables:
+##  $ id                      : int 25
+##  $ is_default              : logi TRUE
+##  $ location_area_encounters: chr "https://pokeapi.co/api/v2/pokemon/25/encounters"
+##  $ moves                   :'data.frame':	81 obs. of  2 variables:
+##  $ name                    : chr "pikachu"
+##  $ order                   : int 35
+##  $ species                 :List of 2
+##  $ sprites                 :List of 8
+##  $ stats                   :'data.frame':	6 obs. of  3 variables:
+##  $ types                   :'data.frame':	1 obs. of  2 variables:
+##  $ weight                  : int 60
+```
+
+---
+
+# Quel est l'Indice de Masse Corporelle de Pikachu ?
+### (imc, ou bmi en anglais)
+
+
+```r
+with(pikachu, tibble(
+    name = "Pikachu",
+    weight = weight/10, # API in hectograms, we want kilograms
+    height = height/10, # API in decimeters, we want meters
+    BMI = weight / (height^2),
+    type = paste(types$type$name, collapse = ", "), # Pokemons can have several types, collapsing
+    sprite = sprites$front_default
+))
+## # A tibble: 1 x 6
+##   name   weight height   BMI type    sprite                                
+##   &lt;chr&gt;   &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;                                 
+## 1 Pikac~      6    0.4  37.5 electr~ https://raw.githubusercontent.com/Pok~
+```
+
+---
+
+# Mais si je m'intéresse aussi à Bulbizarre, Salamèche et Carapuce ?
+
+---
+Solution 1 : copier, coller, modifier
+
+
+```r
+bulbasaur &lt;- jsonlite::fromJSON(
+    "https://pokeapi.co/api/v2/pokemon/bulbasaur"    
+)
+with(bulbasaur, tibble(
+    name = "bulbasaur",
+    weight = weight/10, 
+    height = height/10,
+    BMI = weight / (height^2),
+    type = paste(types$type$name, collapse = ", "),
+    sprite = sprites$front_default
+))
+## # A tibble: 1 x 6
+##   name    weight height   BMI type      sprite                             
+##   &lt;chr&gt;    &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;     &lt;chr&gt;                              
+## 1 bulbas~    6.9    0.7  14.1 poison, ~ https://raw.githubusercontent.com/~
+
+charmander &lt;- jsonlite::fromJSON(
+    "https://pokeapi.co/api/v2/pokemon/charmander"      
+)
+with(charmander, tibble(
+    name = "charmander",
+    weight = weight/10,
+    height = height/10, 
+    BMI = weight / (height^2),
+    type = paste(types$type$name, collapse = ", "),
+    sprite = sprites$front_default
+))
+## # A tibble: 1 x 6
+##   name     weight height   BMI type  sprite                                
+##   &lt;chr&gt;     &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;                                 
+## 1 charman~    8.5    0.6  23.6 fire  https://raw.githubusercontent.com/Pok~
+
+squirtle &lt;- jsonlite::fromJSON(
+    "https://pokeapi.co/api/v2/pokemon/squirtle"      
+)
+with(squirtle, tibble(
+    name = "squirtle",
+    weight = weight/10,
+    height = height/10, 
+    BMI = weight / (height^2),
+    type = paste(types$type$name, collapse = ", "),
+    sprite = sprites$front_default
+))
+## # A tibble: 1 x 6
+##   name    weight height   BMI type  sprite                                 
+##   &lt;chr&gt;    &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;                                  
+## 1 squirt~      9    0.5    36 water https://raw.githubusercontent.com/Poke~
+```
+
+---
+Solution 1 : copier, coller, **modifier**
+
+
+```r
+*bulbasaur &lt;- jsonlite::fromJSON(
+*   "https://pokeapi.co/api/v2/pokemon/bulbasaur"
+)
+*with(bulbasaur, tibble(
+*   name = "bulbasaur",
+    weight = weight/10, 
+    height = height/10, 
+    BMI = weight / (height^2),
+    type = paste(types$type$name, collapse = ", "),
+    sprite = sprites$front_default
+))
+## # A tibble: 1 x 6
+##   name    weight height   BMI type      sprite                             
+##   &lt;chr&gt;    &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;     &lt;chr&gt;                              
+## 1 bulbas~    6.9    0.7  14.1 poison, ~ https://raw.githubusercontent.com/~
+
+*charmander &lt;- jsonlite::fromJSON(
+*   "https://pokeapi.co/api/v2/pokemon/charmander"
+)
+*with(charmander, tibble(
+*   name = "charmander",
+    weight = weight/10, 
+    height = height/10, 
+    BMI = weight / (height^2),
+    type = paste(types$type$name, collapse = ", "),
+    sprite = sprites$front_default
+))
+## # A tibble: 1 x 6
+##   name     weight height   BMI type  sprite                                
+##   &lt;chr&gt;     &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;                                 
+## 1 charman~    8.5    0.6  23.6 fire  https://raw.githubusercontent.com/Pok~
+
+*squirtle &lt;- jsonlite::fromJSON(
+*   "https://pokeapi.co/api/v2/pokemon/squirtle"
+)
+*with(squirtle, tibble(
+*   name = "squirtle",
+    weight = weight/10,
+    height = height/10, 
+    BMI = weight / (height^2),
+    type = paste(types$type$name, collapse = ", "),
+    sprite = sprites$front_default
+))
+## # A tibble: 1 x 6
+##   name    weight height   BMI type  sprite                                 
+##   &lt;chr&gt;    &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;                                  
+## 1 squirt~      9    0.5    36 water https://raw.githubusercontent.com/Poke~
+```
+
+---
+
+* laborieux
+* source d'erreurs
+* répercuter tout changement dans chaque copier - coller
+
+Mais les IDE peuvent aider :
+* Rechercher et Remplacer
+* curseurs multiples (alt + click sour RStudio)
+
+---
+Solution 2: une boucle `for`
+
+
+```r
+my_pokemons &lt;- c("pikachu", "bulbasaur", "charmander", "squirtle")
+
+pokemon_bmi &lt;- tibble( # pré-allocation
+    name = character(0),
+    weight = double(0),
+    height = double(0),
+    bmi = double(0),
+    type = character(0),
+    sprite = character(0)
+)
+
+for (i in seq_along(my_pokemons)) {
+    poke_i &lt;-  jsonlite::fromJSON(
+        paste0("https://pokeapi.co/api/v2/pokemon/", my_pokemons[i])
+    ) 
+    pokemon_bmi[i, ] &lt;- with(poke_i, tibble( 
+        name =  my_pokemons[i],
+        weight = weight/10,
+        height = height/10, 
+        BMI = weight / (height^2),
+        type = paste(types$type$name, collapse = ", "),
+        sprite = sprites$front_default
+    ))
+}
+```
+
+---
+
+
+```r
+pokemon_bmi
+## # A tibble: 4 x 6
+##   name     weight height   bmi type     sprite                             
+## * &lt;chr&gt;     &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;    &lt;chr&gt;                              
+## 1 pikachu     6      0.4  37.5 electric https://raw.githubusercontent.com/~
+## 2 bulbasa~    6.9    0.7  14.1 poison,~ https://raw.githubusercontent.com/~
+## 3 charman~    8.5    0.6  23.6 fire     https://raw.githubusercontent.com/~
+## 4 squirtle    9      0.5  36   water    https://raw.githubusercontent.com/~
+```
+
+* fonctionne
+* rapide
+
+Mais :
+* verbeux
+* crée des variables dans l'environnement global
+* peut être lent si l'objet grandit : `pokemon_bmi &lt;- rbind(pokemon_bmi, new_pokemon)`
+* besoin de réfléchir pour ne pas tomber dans ce genre de piège
+* non immédiatement parallélisable
+
+---
+
+La solution idiomatique : `lapply()`
+
+Étape 1 : créer une fonction
+
+
+```r
+get_pokemon_bmi &lt;- function(poke_name, sleep = 0) {
+    my_pokemon &lt;-  jsonlite::fromJSON(
+        paste0("https://pokeapi.co/api/v2/pokemon/", poke_name)
+    ) 
+    Sys.sleep(sleep)
+    return(
+        with(my_pokemon, tibble( 
+            name = name,
+            weight = weight/10,
+            height = height/10, 
+            BMI = weight / (height^2),
+            type = paste(types$type$name, collapse = ", "),
+            sprite = sprites$front_default
+        ))
+    )
+}
+get_pokemon_bmi("pikachu")
+## # A tibble: 1 x 6
+##   name   weight height   BMI type    sprite                                
+##   &lt;chr&gt;   &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;                                 
+## 1 pikac~      6    0.4  37.5 electr~ https://raw.githubusercontent.com/Pok~
+```
+
+---
+
+Étape 2 : appeler la fonction sur chaque élément d'un vecteur
+
+
+```r
+my_pokemons &lt;- c("pikachu", "bulbasaur", "charmander", "squirtle")
+
+pokemon_bmi &lt;- lapply(
+    my_pokemons, # for each element in my_pokemons
+    get_pokemon_bmi # run function get_pokemon_bmi 
+)
+
+str(pokemon_bmi) # a list :-(
+## List of 4
+##  $ :Classes 'tbl_df', 'tbl' and 'data.frame':	1 obs. of  6 variables:
+##   ..$ name  : chr "pikachu"
+##   ..$ weight: num 6
+##   ..$ height: num 0.4
+##   ..$ BMI   : num 37.5
+##   ..$ type  : chr "electric"
+##   ..$ sprite: chr "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
+##  $ :Classes 'tbl_df', 'tbl' and 'data.frame':	1 obs. of  6 variables:
+##   ..$ name  : chr "bulbasaur"
+##   ..$ weight: num 6.9
+##   ..$ height: num 0.7
+##   ..$ BMI   : num 14.1
+##   ..$ type  : chr "poison, grass"
+##   ..$ sprite: chr "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+##  $ :Classes 'tbl_df', 'tbl' and 'data.frame':	1 obs. of  6 variables:
+##   ..$ name  : chr "charmander"
+##   ..$ weight: num 8.5
+##   ..$ height: num 0.6
+##   ..$ BMI   : num 23.6
+##   ..$ type  : chr "fire"
+##   ..$ sprite: chr "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"
+##  $ :Classes 'tbl_df', 'tbl' and 'data.frame':	1 obs. of  6 variables:
+##   ..$ name  : chr "squirtle"
+##   ..$ weight: num 9
+##   ..$ height: num 0.5
+##   ..$ BMI   : num 36
+##   ..$ type  : chr "water"
+##   ..$ sprite: chr "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png"
+```
+
+---
+
+Étape 3 : transformer la liste en tableau
+
+```r
+pokemon_bmi &lt;- do.call(
+    rbind,
+    pokemon_bmi
+)
+
+pokemon_bmi
+## # A tibble: 4 x 6
+##   name     weight height   BMI type     sprite                             
+##   &lt;chr&gt;     &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;    &lt;chr&gt;                              
+## 1 pikachu     6      0.4  37.5 electric https://raw.githubusercontent.com/~
+## 2 bulbasa~    6.9    0.7  14.1 poison,~ https://raw.githubusercontent.com/~
+## 3 charman~    8.5    0.6  23.6 fire     https://raw.githubusercontent.com/~
+## 4 squirtle    9      0.5  36   water    https://raw.githubusercontent.com/~
+```
+
+---
+
+* en théorie, moins besoin de mettre les mains dans le cambouis
+* en pratique, `x &lt;- do.call(rbind, x)` ...
+* force a écrire des fonctions
+* facilement parallélisable :
+
+```r
+pokemon_bmi &lt;- parallel::mclapply(
+    my_pokemons,
+    get_pokemon_bmi,
+    mc.cores = 8
+)
+## Error in parallel::mclapply(my_pokemons, get_pokemon_bmi, mc.cores = 8): 'mc.cores' &gt; 1 is not supported on Windows
+```
+
+---
+
+Solution 4: le tidyverse
+
+Étape 1 : définir une fonction
+
+Étape 2 : itérer
+
+```r
+my_pokemons &lt;- c("pikachu", "bulbasaur", "charmander", "squirtle")
+
+pokemon_bmi &lt;- map_dfr( # le résultat est un _D_ata _F_rame aggloméré par _R_angs
+    my_pokemons,
+    get_pokemon_bmi
+)
+
+pokemon_bmi
+## # A tibble: 4 x 6
+##   name     weight height   BMI type     sprite                             
+##   &lt;chr&gt;     &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;    &lt;chr&gt;                              
+## 1 pikachu     6      0.4  37.5 electric https://raw.githubusercontent.com/~
+## 2 bulbasa~    6.9    0.7  14.1 poison,~ https://raw.githubusercontent.com/~
+## 3 charman~    8.5    0.6  23.6 fire     https://raw.githubusercontent.com/~
+## 4 squirtle    9      0.5  36   water    https://raw.githubusercontent.com/~
+```
+
+---
+
+* moins besoin de mettre les mains dans le cambouis
+* facilement parallélisable :
+
+```r
+library(furrr)
+plan(multiprocess(workers = 8))
+future_map_dfr(my_pokemons, get_pokemon_bmi)
+## # A tibble: 4 x 6
+##   name     weight height   BMI type     sprite                             
+##   &lt;chr&gt;     &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;    &lt;chr&gt;                              
+## 1 pikachu     6      0.4  37.5 electric https://raw.githubusercontent.com/~
+## 2 bulbasa~    6.9    0.7  14.1 poison,~ https://raw.githubusercontent.com/~
+## 3 charman~    8.5    0.6  23.6 fire     https://raw.githubusercontent.com/~
+## 4 squirtle    9      0.5  36   water    https://raw.githubusercontent.com/~
+```
+
+---
+
+Une fonction `map_*` par type de résultat souhaité :
+
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; function &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; result &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; map() &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; list &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; map_chr() &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; character vector &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; map_int() &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; integer vector &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; map_dbl() &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; double vector &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; map_lgl() &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; logical vector &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; map_dfr() &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; data frame, row bind &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; map_dfc() &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; data frame, col bind &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; walk() &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; no return (side effects) &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+---
+
+Fonctions anonymes :
+
+
+```r
+map_dbl(my_pokemons, function(x) {
+    get_pokemon_bmi(x)[["height"]]
+})
+## [1] 0.4 0.7 0.6 0.5
+
+map_dbl(my_pokemons, ~get_pokemon_bmi(.x)[["height"]])
+## [1] 0.4 0.7 0.6 0.5
+```
+
+---
+
+Préserve les noms :
+
+
+```r
+my_pokemons
+## [1] "pikachu"    "bulbasaur"  "charmander" "squirtle"
+
+set_names(my_pokemons)
+##      pikachu    bulbasaur   charmander     squirtle 
+##    "pikachu"  "bulbasaur" "charmander"   "squirtle"
+
+my_pokemons %&gt;%
+    map_chr(~get_pokemon_bmi(.x)[["type"]])
+## [1] "electric"      "poison, grass" "fire"          "water"
+
+set_names(my_pokemons) %&gt;%
+    map_chr(~get_pokemon_bmi(.x)[["type"]])
+##         pikachu       bulbasaur      charmander        squirtle 
+##      "electric" "poison, grass"          "fire"         "water"
+```
+
+---
+Attrapage d'erreur :
+
+
+```r
+my_pokemons &lt;- c("pikachu", "bulbasaur", "charmander", "squirtle", "magicarpe")
+map(my_pokemons, get_pokemon_bmi)
+## Error in open.connection(con, "rb"): HTTP error 404.
+```
+
+**Tout** le calcul est perdu à cause d'une erreur sur **une seule** itération 
+(T__T)
+
+---
+
+
+```r
+safe_get_pokemon_bmi &lt;- safely(get_pokemon_bmi)
+
+safe_get_pokemon_bmi("pikachu")
+## $result
+## # A tibble: 1 x 6
+##   name   weight height   BMI type    sprite                                
+##   &lt;chr&gt;   &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;                                 
+## 1 pikac~      6    0.4  37.5 electr~ https://raw.githubusercontent.com/Pok~
+## 
+## $error
+## NULL
+
+safe_get_pokemon_bmi("magicarpe")
+## $result
+## NULL
+## 
+## $error
+## &lt;simpleError in open.connection(con, "rb"): HTTP error 404.&gt;
+```
+
+---
+
+
+```r
+prelim_results &lt;- set_names(my_pokemons) %&gt;%
+    map(safe_get_pokemon_bmi)
+
+success &lt;- map_lgl(prelim_results, ~is.null(.x$error))
+success
+##    pikachu  bulbasaur charmander   squirtle  magicarpe 
+##       TRUE       TRUE       TRUE       TRUE      FALSE
+
+map_dfr(prelim_results[success], "result")
+## # A tibble: 4 x 6
+##   name     weight height   BMI type     sprite                             
+##   &lt;chr&gt;     &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;    &lt;chr&gt;                              
+## 1 pikachu     6      0.4  37.5 electric https://raw.githubusercontent.com/~
+## 2 bulbasa~    6.9    0.7  14.1 poison,~ https://raw.githubusercontent.com/~
+## 3 charman~    8.5    0.6  23.6 fire     https://raw.githubusercontent.com/~
+## 4 squirtle    9      0.5  36   water    https://raw.githubusercontent.com/~
+```
+
+---
+
+Ou alors :
+
+```r
+possibly_get_pokemon_bmi &lt;- possibly(get_pokemon_bmi, otherwise = NULL)
+
+possibly_get_pokemon_bmi("pikachu")
+## # A tibble: 1 x 6
+##   name   weight height   BMI type    sprite                                
+##   &lt;chr&gt;   &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;                                 
+## 1 pikac~      6    0.4  37.5 electr~ https://raw.githubusercontent.com/Pok~
+
+possibly_get_pokemon_bmi("magicarpe")
+## NULL
+
+my_pokemons
+## [1] "pikachu"    "bulbasaur"  "charmander" "squirtle"   "magicarpe"
+map_dfr(
+    my_pokemons,
+    ~possibly(get_pokemon_bmi, otherwise = NULL)(.x)
+)
+## # A tibble: 4 x 6
+##   name     weight height   BMI type     sprite                             
+##   &lt;chr&gt;     &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;    &lt;chr&gt;                              
+## 1 pikachu     6      0.4  37.5 electric https://raw.githubusercontent.com/~
+## 2 bulbasa~    6.9    0.7  14.1 poison,~ https://raw.githubusercontent.com/~
+## 3 charman~    8.5    0.6  23.6 fire     https://raw.githubusercontent.com/~
+## 4 squirtle    9      0.5  36   water    https://raw.githubusercontent.com/~
+```
+
+---
+
+Attention : les erreurs sont devenues silencieuses !
+
+```r
+get_pokemon_bmi("magicarpe")
+## Error in open.connection(con, "rb"): HTTP error 404.
+
+possibly(get_pokemon_bmi, otherwise = NULL)("magicarpe")
+## NULL
+
+possibly(get_pokemon_bmi, otherwise = NULL, quiet = FALSE)("magicarpe")
+## Error: HTTP error 404.
+## NULL
+```
+
+
+---
+Et sur 151 pokémon ?
+
+
+```r
+pokemon_bmi &lt;- map_dfr(1:151, possibly_get_pokemon_bmi, sleep = 1)
+
+library(ggplot2)
+library(ggimage)
+
+ggplot(pokemon_bmi, aes(x = weight, y = height, text = name)) +
+    stat_function(fun = function(w) sqrt(w/30), color = "darkred", linetype = "dotted") +
+    stat_function(fun = function(w) sqrt(w/15), color = "orange", linetype = "dotted") +
+    annotate("text", x = rep(350, 2), y = c(3.1, 4.5), label = c("BMI = 30", "BMI = 15"), color = c("darkred", "orange")) +
+    geom_image(aes(image = sprite), size = 0.12) +
+    theme_bw(base_size = 14)
+
+```
+
+---
+class: center
+
+![](intro_purrr_files/figure-html/unnamed-chunk-23-1.png)&lt;!-- --&gt;
+
+---
+# Bonus
+
+Vectorisez vos fonctions, plus besoin de boucles !
+
+
+```r
+get_pokemon_bmi(c("pikachu", "bulbasaur", "charmander", "squirtle"))
+## Error: lexical error: invalid char in json text.
+##                                        https://pokeapi.co/api/v2/pokem
+##                      (right here) ------^
+
+get_pokemon_bmi_v &lt;- function(poke_names, sleep = 0) {
+    map_dfr(poke_names, get_pokemon_bmi, sleep = sleep)
+}
+
+get_pokemon_bmi_v(c("pikachu", "bulbasaur", "charmander", "squirtle"))
+## # A tibble: 4 x 6
+##   name     weight height   BMI type     sprite                             
+##   &lt;chr&gt;     &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;    &lt;chr&gt;                              
+## 1 pikachu     6      0.4  37.5 electric https://raw.githubusercontent.com/~
+## 2 bulbasa~    6.9    0.7  14.1 poison,~ https://raw.githubusercontent.com/~
+## 3 charman~    8.5    0.6  23.6 fire     https://raw.githubusercontent.com/~
+## 4 squirtle    9      0.5  36   water    https://raw.githubusercontent.com/~
+
+get_pokemon_bmi_v("pikachu")
+## # A tibble: 1 x 6
+##   name   weight height   BMI type    sprite                                
+##   &lt;chr&gt;   &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;                                 
+## 1 pikac~      6    0.4  37.5 electr~ https://raw.githubusercontent.com/Pok~
+```
+
+---
+
+# Pour aller plus loin
+
+- passer deux séries d'arguments : `map2(x, y, fun)`
+- passer n séries d'arguments : `pmap(list(x, y, z, ...), fun)`
+- exécuter sur un sous ensemble : `map_at(x, at, fun)`, `map_if(x, cond, fun)`
+- composer des fonctions : `compose(fun1, fun2)`
+- et plus encore !
+
+Liens :
+- [Itération de fonctions avec purrr](http://perso.ens-lyon.fr/lise.vaudor/iterer-des-fonctions-avec-purrr/)
+- [Lesser known purrr tricks](https://www.brodrigues.co/blog/2017-03-24-lesser_known_purrr/)
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="libs/remark-latest.min.js"></script>
+<script src="libs/devailly.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
