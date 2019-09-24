@@ -1,0 +1,31 @@
+---
+title: Diaporamas de la rencontre de septembre 2019
+author: Guillaume Devailly
+date: '2019-09-24'
+slug: diaporamas-de-la-rencontre-de-septembre-2019
+categories:
+  - Diaporamas
+tags:
+  - copules
+  - purrr
+  - tidyverse
+---
+
+Merci beaucoup à Tom Rohmer pour sa présentation.
+
+Vous pouvez retrouver les diaporamas de la dernière rencontre ici :
+
+- Petite introduction au package `purrr`, par Guillaume Devailly : [html](/diapos/html/purrr/intro_purrr.html), [source](https://github.com/gdevailly/gdevailly.github.io/blob/master/purrr/intro_purrr.Rmd)
+- Analyse de la dépendance avec R, une brève introduction aux copules, par Tom Rohmer : [pdf](/diapos/2019-09-19_copules.pdf)
+
+---
+
+Ce groupe a besoin de vous ! Si vous souhaitez présenter quelque chose, merci d’envoyer un mail
+à **rug.toulouse @ gmail.com** (sans les espaces autour du `@`) ou de vous inscrire dans ce [planning](https://docs.google.com/spreadsheets/d/13oawsfSFrW76pTG7hvoa7_3yBJzVJ5CAgLTk6ANftJE/edit?usp=sharing).
+Tous les sujets sont les bienvenus !
+
+N’hésitez pas non plus à faire part de l’existence de ce groupe autour de vous.
+
+Bientôt ici même : des infos sur la prochaine rencontre.
+
+![](/img/logo.svg)
