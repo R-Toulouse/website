@@ -1,0 +1,43 @@
+---
+title: Rencontre de Novembre 2019
+author: Guillaume Devailly
+date: '2019-10-28'
+slug: rencontre-de-novembre-2019
+categories:
+  - Rencontres
+tags:
+  - R Markdown
+---
+
+La prochaine du groupe des utilisatrices et utilisateurs de R de Toulouse est prévue le **lundi 18 novembre 2019** de **17h00 à 18h30**.
+Attention, nous avons du changer la date par rapport à ce qui avait été précédement annoncé.
+
+Cette rencontre aura exceptionnelement lieu à l'Amphithéatre Marc Ridet du **Centre INRA d'Auzeville** :
+
+```{r plan, echo=FALSE}
+library(leaflet)
+leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  addMarkers(lat = 43.52783, lng = 1.50011, popup = "Marc Ridet, INRA Auzeville")
+```
+
+Le centre est accéssible en transport en commun : métro ligne B jusqu'à Ramonville, puis Linéo 6 jusqu'à l'arrêt INRA.
+L'amphithèatre est situé à coté de l'accueil du centre. 
+
+---
+
+## Programme
+
+Nathalie Vialaneix nous présentera la famille *down (R markdown & co.) :
+
+Vous rêvez de tout pouvoir faire sous R ? Vos rapports mais
+aussi vos livres, vos sites web, vos documentations, vos posters, ... ?
+Cet exposé est fait pour vous ! Nathalie tentera d'y présenter les
+différents membres de la famille Rmarkdown et de vous montrer quelques
+options utiles pour leur utilisation.
+Cette présentation ne vous apprendra malheureusement pas à vous faire
+servir un café par R. 
+
+---
+
+Ces rencontres sont gratuites, ouvertes à toutes et tous, académiques, professionnels et amateurs, débutants ou confirmés.
