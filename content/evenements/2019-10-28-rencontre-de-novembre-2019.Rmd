@@ -10,9 +10,9 @@ tags:
 ---
 
 La prochaine du groupe des utilisatrices et utilisateurs de R de Toulouse est prévue le **lundi 18 novembre 2019** de **17h00 à 18h30**.
-Attention, nous avons du changer la date par rapport à ce qui avait été précédement annoncé.
+Attention, nous avons dû changer la date par rapport à ce qui avait été précédemment annoncé.
 
-Cette rencontre aura exceptionnelement lieu à l'Amphithéatre Marc Ridet du **Centre INRA d'Auzeville** :
+Cette rencontre aura exceptionnellement lieu à l’amphithéâtre Marc Ridet du **Centre INRA d'Auzeville** (24 chemin de Borde-Rouge, 31326 Auzeville) :
 
 ```{r plan, echo=FALSE}
 library(leaflet)
@@ -21,14 +21,14 @@ leaflet() %>%
   addMarkers(lat = 43.52783, lng = 1.50011, popup = "Marc Ridet, INRA Auzeville")
 ```
 
-Le centre est accéssible en transport en commun : métro ligne B jusqu'à Ramonville, puis Linéo 6 jusqu'à l'arrêt INRA.
-L'amphithèatre est situé à coté de l'accueil du centre. 
+Le centre est accessible en transport en commun : métro ligne B jusqu'à Ramonville, puis Linéo 6 jusqu'à l'arrêt INRA.
+L’amphithéâtre est situé à côté de l'accueil du centre. 
 
 ---
 
 ## Programme
 
-Nathalie Vialaneix nous présentera la famille *down (R markdown & co.) :
+[Nathalie Vialaneix](http://www.nathalievialaneix.eu/) nous présentera **la famille *down (R markdown & co.)** :
 
 Vous rêvez de tout pouvoir faire sous R ? Vos rapports mais
 aussi vos livres, vos sites web, vos documentations, vos posters, ... ?
