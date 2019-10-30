@@ -28,7 +28,7 @@ L’amphithéâtre est situé à côté de l'accueil du centre.
 
 ## Programme
 
-[Nathalie Vialaneix](http://www.nathalievialaneix.eu/) nous présentera **la famille *down (R markdown & co.)** :
+[Nathalie Vialaneix](http://www.nathalievialaneix.eu/) nous présentera **la famille \*down (R markdown & co.)** :
 
 Vous rêvez de tout pouvoir faire sous R ? Vos rapports mais
 aussi vos livres, vos sites web, vos documentations, vos posters, ... ?
@@ -41,3 +41,5 @@ servir un café par R.
 ---
 
 Ces rencontres sont gratuites, ouvertes à toutes et tous, académiques, professionnels et amateurs, débutants ou confirmés.
+N'hésitez pas à diffuser l'annonce autour de vous ! Notamment en placardant [cette affiche](/poster/poster_2019_11.pdf) à des endroits stratégiques.
+
