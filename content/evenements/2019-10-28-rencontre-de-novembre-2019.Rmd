@@ -9,7 +9,7 @@ tags:
   - R Markdown
 ---
 
-La prochaine du groupe des utilisatrices et utilisateurs de R de Toulouse est prévue le **lundi 18 novembre 2019** de **17h00 à 18h30**.
+La prochaine réunion du groupe des utilisatrices et utilisateurs de R de Toulouse est prévue le **lundi 18 novembre 2019** de **17h00 à 18h30**.
 Attention, nous avons dû changer la date par rapport à ce qui avait été précédemment annoncé.
 
 Cette rencontre aura exceptionnellement lieu à l’amphithéâtre Marc Ridet du **Centre INRA d'Auzeville** (24 chemin de Borde-Rouge, 31326 Auzeville) :
