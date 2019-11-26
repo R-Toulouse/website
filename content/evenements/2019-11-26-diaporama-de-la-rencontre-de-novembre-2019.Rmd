@@ -1,0 +1,30 @@
+---
+title: Diaporama de la rencontre de Novembre 2019
+author: Guillaume Devailly
+date: '2019-11-26'
+slug: diaporama-de-la-rencontre-de-novembre-2019
+categories:
+  - Diaporamas
+tags:
+  - R Markdown
+  - xaringan
+  - LaTeX
+---
+
+
+Merci beaucoup à [Nathalie Vialaneix](http://www.nathalievialaneix.eu) pour sa présentation.
+
+Vous pouvez retrouver son diaporama ici :
+- La famille \*down, par Nathalie Vialaneix : [pdf](/diapos/2019-11-18_Rmarkdown.pdf)
+
+---
+
+Ce groupe a besoin de vous ! Si vous souhaitez présenter quelque chose, merci d’envoyer un mail
+à **rug.toulouse @ gmail.com** (sans les espaces autour du `@`) ou de vous inscrire dans ce [planning](https://docs.google.com/spreadsheets/d/13oawsfSFrW76pTG7hvoa7_3yBJzVJ5CAgLTk6ANftJE/edit?usp=sharing).
+Tous les sujets sont les bienvenus !
+
+N’hésitez pas non plus à faire part de l’existence de ce groupe autour de vous.
+
+Bientôt ici même : des infos sur la prochaine rencontre.
+
+![](/img/logo.svg)
