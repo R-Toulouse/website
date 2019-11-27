@@ -15,7 +15,7 @@ tags:
 Merci beaucoup à [Nathalie Vialaneix](http://www.nathalievialaneix.eu) pour sa présentation.
 
 Vous pouvez retrouver son diaporama ici :
-- La famille \*down, par Nathalie Vialaneix : [pdf](/diapos/2019-11-18_Rmarkdown.pdf)
+- La famille \*down, par Nathalie Vialaneix : [pdf](/diapos/2019-11-18_Rmarkdown.pdf), [Rmd](http://www.nathalievialaneix.eu/seminars2019.html)
 
 ---
 
