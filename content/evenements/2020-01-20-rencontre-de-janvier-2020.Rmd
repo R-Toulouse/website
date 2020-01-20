@@ -1,0 +1,41 @@
+---
+title: Rencontre de Janvier 2020
+author: Guillaume Devailly
+date: '2020-01-20'
+slug: rencontre-de-janvier-2020
+categories:
+  - Rencontres
+tags:
+  - Julia
+  - RGPD
+---
+
+La prochaine du groupe des utilisatrices et utilisateurs de R de Toulouse est prévue le **jeudi 30 janvier 2020** de **17h00 à 18h00**,
+à l'**amphithéâtre Schwartz de l'Institut de Mathématiques de Toulouse** (métro ligne B, Université Paul Sabatier) :
+
+```{r plan, echo=FALSE}
+library(leaflet)
+leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  addMarkers(lat = 43.56162, lng = 1.46577, popup = "Institut de Mathématiques de Toulouse")
+```
+
+
+---
+
+## Programme
+
+**le RGPD facile avec R, ou comment devenir le meilleur ami de votre DPO**, par Christophe Regouby
+
+Cette présentation est une proposition d'outillage complet du RGPD, avec un lecteur de documents à grande échelle, un parseur de fichier Excel, un annotateur  de textes pour constituer le Gold standard, l’entraînement d'un modèle de NER propre à votre domaine métier, pour la découverte et l’élimination de toutes ces données personnelles qui encombrent vos jeux de données...
+
+**Introduction au langage Julia**, par Marc Teisser
+
+Julia est un langage de programmation récent spécialisé dans l'analyse de données (au même titre que R). Cette présentation vise à introduire quelques concepts et éléments de syntaxe propre à ce nouveau langage. Je profiterai de cette présentation pour introduire l'utilisation de DataFrames et la création de graphiques qui sont pour nous des tâches quotidiennes.
+
+---
+
+Ces rencontres sont gratuites, ouvertes à toutes et tous, académiques, professionnels et amateurs, débutants ou confirmés.
+
+N'hésitez pas à diffuser l'annonce autour de vous ! Notamment en affichant [cette affiche](/poster/poster_2020_01.pdf) à des endroits stratégiques.
+
