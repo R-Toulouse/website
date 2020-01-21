@@ -1,5 +1,5 @@
 ---
-title: Rencontre de Janvier 2020
+title: Rencontre de janvier 2020
 author: Guillaume Devailly
 date: '2020-01-20'
 slug: rencontre-de-janvier-2020
@@ -25,9 +25,9 @@ leaflet() %>%
 
 ## Programme
 
-**le RGPD facile avec R, ou comment devenir le meilleur ami de votre DPO**, par Christophe Regouby
+**Le RGPD facile avec R, ou comment devenir le meilleur ami de votre Data Protection Officer**, par Christophe Regouby
 
-Cette présentation est une proposition d'outillage complet du RGPD, avec un lecteur de documents à grande échelle, un parseur de fichier Excel, un annotateur  de textes pour constituer le Gold standard, l’entraînement d'un modèle de NER propre à votre domaine métier, pour la découverte et l’élimination de toutes ces données personnelles qui encombrent vos jeux de données...
+Cette présentation est une proposition d'outillage complet du RGPD (Règlement Général sur la Protection des Données), avec un lecteur de documents à grande échelle, un parseur de fichier Excel, un annotateur  de textes pour constituer le Gold standard, l’entraînement d'un modèle de *Name Entity Recognition* propre à votre domaine métier, pour la découverte et l’élimination de toutes ces données personnelles qui encombrent vos jeux de données...
 
 **Introduction au langage Julia**, par Marc Teisser
 
