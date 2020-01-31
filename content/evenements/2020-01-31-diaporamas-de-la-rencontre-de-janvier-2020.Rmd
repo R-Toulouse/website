@@ -17,7 +17,7 @@ Vous pouvez retrouver leurs diaporamas ici :
 
 - La RGPD facile avec R, ou comment devenir le meilleur ami de votre *Data Protection Officer*, par Christophe Regouby : [pdf](/diapos/2020-01-30_RGPD.pdf), [Code](https://github.com/cregouby/RGPD_facile_avec_R)
 
-- Introduction au langage *Julia*, par Marc Teisser : *bientôt*
+- Introduction au langage *Julia*, par Marc Teisser : [pdf](/diapos/2020-01-30_Julia.pdf)
 
 ---
 
