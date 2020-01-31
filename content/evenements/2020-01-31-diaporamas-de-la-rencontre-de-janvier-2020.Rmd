@@ -1,0 +1,32 @@
+---
+title: Diaporamas de la rencontre de janvier 2020
+author: Guillaume Devailly
+date: '2020-01-31'
+slug: diaporamas-de-la-rencontre-de-janvier-2020
+categories:
+  - Diaporamas
+tags:
+  - Julia
+  - RGPD
+  - NER
+---
+
+Merci beaucoup à Christophe Regouby et Marc Teisser pour leurs présentations !
+
+Vous pouvez retrouver leurs diaporamas ici :
+
+- La RGPD facile avec R, ou comment devenir le meilleur ami de votre *Data Protection Officer*, par Christophe Regouby : [pdf](/diapos/2020-01-30_RGPD.pdf), [Code](https://github.com/cregouby/RGPD_facile_avec_R)
+
+- Introduction au langage *Julia*, par Marc Teisser : *bientôt*
+
+---
+
+Ce groupe a besoin de vous ! Si vous souhaitez présenter quelque chose, merci d’envoyer un mail
+à **rug.toulouse @ gmail.com** (sans les espaces autour du `@`) ou de vous inscrire dans ce [planning](https://docs.google.com/spreadsheets/d/13oawsfSFrW76pTG7hvoa7_3yBJzVJ5CAgLTk6ANftJE/edit?usp=sharing).
+Tous les sujets sont les bienvenus !
+
+N’hésitez pas non plus à faire part de l’existence de ce groupe autour de vous.
+
+Bientôt : des infos sur la prochaine rencontre.
+
+![](/img/logo.svg)
