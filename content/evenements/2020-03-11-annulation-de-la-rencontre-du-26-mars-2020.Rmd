@@ -10,7 +10,7 @@ tags: []
 
 Le risque de propagation en France du virus COVID-19 nous pousse à annuler la prochaine rencontre du groupe toulousain des utilisatrices et utilisateurs de R. Cette rencontre était initialement prévue le 26 mars 2020 de 17h à 18h.
 
-Nous vous donnons donc rendez-vous le jeudi 28 mai 2020 à 17h pour une prochaine rencontre.
+~~Nous vous donnons donc rendez-vous le jeudi 28 mai 2020 à 17h pour une prochaine rencontre.~~
 
 D'ici là, suivez-les [recommandations publiques](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/coronavirus-questions-reponses#Gestes-barrieres) :
 
