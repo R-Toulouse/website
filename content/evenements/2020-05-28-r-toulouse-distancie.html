@@ -33,7 +33,21 @@ et pour combler votre soif d’apprendre R, voici quelques liens que nous vous p
 <ul>
 <li><p>Le package <a href="https://github.com/r-lib/waldo">waldo</a> qui affiche les différences entre 2 objets R.</p></li>
 <li><p>Le package <a href="https://github.com/elbersb/tidylog/">tidylog</a> qui permet de vérifier le résultats des fonctions de bases de <em>dplyr</em> notamment lors de l’utilisation des fonctions <em>join</em></p></li>
-<li><p><a href="https://youtu.be/vYwXMnC03I4">Tidyverse: the greatest mistakes</a> : une vidéo de Hadley Wickham</p></li>
+</ul>
+<pre class="r"><code>library(&quot;dplyr&quot;)
+library(&quot;tidyr&quot;)
+library(&quot;tidylog&quot;, warn.conflicts = FALSE)
+
+joined &lt;- left_join(nycflights13::flights, nycflights13::weather,
+    by = c(&quot;year&quot;, &quot;month&quot;, &quot;day&quot;, &quot;origin&quot;, &quot;hour&quot;, &quot;time_hour&quot;))
+#&gt; left_join: added 9 columns (temp, dewp, humid, wind_dir, wind_speed, …)
+#&gt;            &gt; rows only in x     1,556
+#&gt;            &gt; rows only in y  (  6,737)
+#&gt;            &gt; matched rows     335,220
+#&gt;            &gt;                 =========
+#&gt;            &gt; rows total       336,776</code></pre>
+<ul>
+<li><a href="https://youtu.be/vYwXMnC03I4">Tidyverse: the greatest mistakes</a> : une vidéo de Hadley Wickham</li>
 </ul>
 <hr />
 <p>Nous vous donnons rendez-vous l’année scolaire prochaine pour de prochaines rencontre en présentielles.</p>

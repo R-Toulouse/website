@@ -32,6 +32,22 @@ et pour combler votre soif d’apprendre R, voici quelques liens que nous vous p
 
 - Le package [tidylog](https://github.com/elbersb/tidylog/) qui permet de vérifier le résultats des fonctions de bases de *dplyr* notamment lors de l’utilisation des fonctions *join*
 
+```{r tidylog, eval=FALSE}
+library("dplyr")
+library("tidyr")
+library("tidylog", warn.conflicts = FALSE)
+
+joined <- left_join(nycflights13::flights, nycflights13::weather,
+    by = c("year", "month", "day", "origin", "hour", "time_hour"))
+#> left_join: added 9 columns (temp, dewp, humid, wind_dir, wind_speed, …)
+#>            > rows only in x     1,556
+#>            > rows only in y  (  6,737)
+#>            > matched rows     335,220
+#>            >                 =========
+#>            > rows total       336,776
+```
+
+
 - [Tidyverse: the greatest mistakes](https://youtu.be/vYwXMnC03I4) : une vidéo de Hadley Wickham
 
 ---
