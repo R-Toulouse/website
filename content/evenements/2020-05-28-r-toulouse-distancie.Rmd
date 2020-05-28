@@ -1,0 +1,38 @@
+---
+title: R-Toulouse distancié
+author: Guillaume Devailly
+date: '2020-05-28'
+slug: r-toulouse-distancie
+categories:
+  - Liens
+tags:
+  - Lectures
+---
+
+Pour vous remettre de l’annulation des deux dernières rencontres de R-Toulouse
+et pour combler votre soif d’apprendre R, voici quelques liens que nous vous proposons, à là [R weekly](https://rweekly.org/), sans aucune prétention ni d’exhaustivité, ni d’objectivité (il y a même un conflit d'intérêt manifeste !).
+
+# En français :
+
+- [Hey ! Quoi de neuf {dplyr} ? Le point sur la v1 !](https://thinkr.fr/hey-quoi-de-neuf-dplyr-le-point-sur-la-v1/)
+
+![](/img/dplyrv1.png)
+
+# En anglais :
+
+- [A New palette() for R:](https://developer.r-project.org/Blog/public/2019/11/21/a-new-palette-for-r/index.html)
+
+![](/img/paletter.png)
+
+- [The shape of DNA](https://gdevailly.netlify.app/post/the-shape-of-dna/)
+
+![](/img/graphical_abstract.png)
+
+- Le package [waldo](https://github.com/r-lib/waldo) qui affiche les différences entre 2 objets R.
+
+- Le package [tidylog](https://github.com/elbersb/tidylog/) qui permet de vérifier le résultats des fonctions de bases de *dplyr* notamment lors de l’utilisation des fonctions *join*
+
+- [Tidyverse: the greatest mistakes](https://youtu.be/vYwXMnC03I4) : une vidéo de Hadley Wickham
+
+---
+Nous vous donnons rendez-vous l'année scolaire prochaine pour de prochaines rencontre en présentielles.
