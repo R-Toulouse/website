@@ -28,7 +28,7 @@ et pour combler votre soif d’apprendre R, voici quelques liens que nous vous p
 
 ![](/img/graphical_abstract.png)
 
-- Le package [waldo](https://github.com/r-lib/waldo) qui affiche les différences entre 2 objets R.
+- Le package [waldo](https://github.com/r-lib/waldo) qui affiche les différences entre 2 objets R (un nouveau package d'Hadley Wickham).
 
 - Le package [tidylog](https://github.com/elbersb/tidylog/) qui permet de vérifier le résultats des fonctions de bases de *dplyr* notamment lors de l’utilisation des fonctions *join*
 
