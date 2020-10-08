@@ -1,0 +1,24 @@
+---
+title: R-Toulouse en pause
+author: Guillaume Devailly
+date: '2020-10-08'
+slug: r-toulouse-en-pause
+categories:
+  - Rencontres
+tags:
+  - Lectures
+---
+
+Comme vous avez pu le constater, nous n'avons pas repris les rencontres R-Toulouse en cet automne 2020.
+Nous réfléchissons à la meilleure façon d'organiser une rencontre virtuelle en janvier 2021, en attendant que la situation sanitaire
+nous permettent de nous réunir plus sereinement.
+
+D'ici là, n'hésitez pas à nous contacter à l'adresse rug.toulouse @ gmail.com (sans les espaces autour du @) si :
+
+* vous souhaitez présenter quelque chose lors d'une rencontre
+* vous souhaitez nous aider à organiser une rencontre
+* vous souhaitez écrire un billet de blog ici même pour compenser l'absence de rencontres.
+
+Prenez soin de vous.
+
+![](/img/logo.svg)
