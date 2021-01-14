@@ -1,0 +1,40 @@
+---
+title: Rencontre du 28 janvier 2021
+author: 'Guillaume Devailly '
+date: '2021-01-14'
+slug: []
+categories:
+  - Rencontres
+tags:
+  - keras
+  - Machine Learning
+---
+
+Meilleurs voeux pour cette année 2021 qui s'annonce peu banale !
+R Toulouse reprend du service, avec une première rencontre par visio le **jeudi 28 janvier 2021** de **17h à 18h** sur la plateforme de visioconférence **Zoom**.
+
+---
+
+## Programme
+
+**Deep Learning avec R et keras**, par Vincent Rocher (doctorant en bio-informatique au [Centre de Biologie Intégrative](https://cbi-toulouse.fr/fr/)).
+
+Le deep learning s'est rapidement développé ces dernières années et est maintenant présent absolument partout : 
+dans la vie de tous les jours (Google translate, classification d'images, assistant vocaux, voitures autonomes etc ...), 
+dans le jeux vidéo ([AlphaStar](https://deepmind.com/blog/article/AlphaStar-Grandmaster-level-in-StarCraft-II-using-multi-agent-reinforcement-learning), [DLSS](https://www.nvidia.com/fr-fr/geforce/technologies/dlss/)) mais aussi dans des applications assez incroyables (génération d'images de personnes fictives : [thispersondoesnotexist.com](https://thispersondoesnotexist.com/) ) et bien entendu dans la recherche : ([AlphaFold](https://deepmind.com/blog/article/AlphaFold-Using-AI-for-scientific-discovery)).
+
+Les deux principales librairies de deeplearning sont tensorflow (Google) et PyTorch (Facebook), chacune utilisable via python, et l'API de haut niveau pour le deep learning la plus populaire est Keras (également en python). Une interface R de keras est maintenant [disponible](https://cloud.r-project.org/package=keras), et vous sera présentée et illustrée.
+
+---
+
+## Informations de connections
+
+Participer à la réunion Zoom: 
+
+[zoom.us/j/91392379032?pwd=cmZDQ2hIbkFmWUxoY1dleXpRQnR4Zz09](https://zoom.us/j/91392379032?pwd=cmZDQ2hIbkFmWUxoY1dleXpRQnR4Zz09)
+
+ID de réunion : 913 9237 9032 
+
+Code secret : R0128
+
+![](/img/logo.svg)
