@@ -1,0 +1,29 @@
+---
+title: Diaporama et video de la rencontre de janvier 2021
+author: Guillaume Devailly
+date: '2021-02-02'
+slug: []
+categories:
+  - Diaporamas
+  - Vidéo
+tags:
+  - keras
+  - Machine Learning
+---
+
+
+Merci beaucoup à Vincent Rocher pour sa présentation.
+
+Vous pouvez retrouver le diaporamas de la dernière rencontre ici :
+
+- Deep Learning with R and keras, par Vincent Rocher : [html](https://rochevin.github.io/deeplearning_R/)
+
+Un enregistrement de la vidéo est disponible :
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7569SjWp-WI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
+Bientôt ici même : des infos sur la prochaine rencontre.
+
+![](/img/logo.svg)
