@@ -1,0 +1,34 @@
+---
+title: Rencontre du 16 mars 2021
+author: Guillaume Devailly
+date: '2021-03-02'
+slug: []
+categories:
+  - Rencontres
+tags:
+  - cartographie
+---
+
+La prochaine rencontre de R-Toulouse est prévue par visio le **mardi 16 mars 2021** de **17h à 18h** sur la plateforme de visioconférence **Zoom**.
+
+---
+
+## Programme
+
+**Typologie d’exploitations agricoles en région Grand Est : Automatisation de la production de cartes en R**, par Michael Levi-Valensin (Bureau des Méthodes et Information Statistiques, Complexe Agricole d'Auzeville).
+
+Michael Levi-Valensin présentera un travail réalisé il y a un an à la DRAAF Grand Est pour le compte de la Chambre Régionale d'Agriculture, ce qui a donné lieu à un dossier mis en forme et automatisé avec des scripts R (pour les tableaux et graphiques). 
+
+---
+
+## Informations de connections
+
+Participer à la réunion Zoom: mardi 16 mars 2021 de 17h à 18h
+
+[zoom.us/j/91931924739?pwd=TXhab0dEMlRwdWZHQjIyeG9pc1crdz09](https://zoom.us/j/91931924739?pwd=TXhab0dEMlRwdWZHQjIyeG9pc1crdz09)
+
+ID de réunion : 919 3192 4739
+
+Code secret : RToulouse
+
+![](/img/logo.svg)
