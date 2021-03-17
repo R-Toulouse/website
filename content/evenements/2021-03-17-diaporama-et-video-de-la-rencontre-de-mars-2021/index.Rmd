@@ -1,0 +1,26 @@
+---
+title: Diaporama et vidéo de la rencontre de mars 2021
+author: Guillaume Devailly
+date: '2021-03-17'
+slug: []
+categories:
+  - Diaporamas
+  - Vidéo
+tags:
+  - cartographie
+  - Diaporamas
+---
+
+
+Merci beaucoup à Michael Levi-Valensin pour sa présentation.
+
+Vous pouvez retrouver le diaporamas de la dernière rencontre ici :
+
+- Automatisation de la production de cartes en R, par Michael Levi-Valensin : [odt](https://r-toulouse.netlify.app/diapos/2021_03_16_TypoCRAGE.odt),
+[pdf](https://r-toulouse.netlify.app/diapos/2021_03_16_TypoCRAGE.pdf)
+
+Un enregistrement de la vidéo sera bientôt disponible ici même.
+
+---
+
+![](/img/logo.svg)
