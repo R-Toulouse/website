@@ -1,4 +1,4 @@
-baseURL = "https://r-toulouse.netlify.com/"
+baseURL = "https://r-toulouse.netlify.app/"
 languageCode = "fr-fr"
 title = "R Toulouse"
 theme = "minimal"

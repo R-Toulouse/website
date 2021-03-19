@@ -19,7 +19,9 @@ Vous pouvez retrouver le diaporamas de la dernière rencontre ici :
 - Automatisation de la production de cartes en R, par Michael Levi-Valensin : [odp](https://r-toulouse.netlify.app/diapos/2021_03_16_TypoCRAGE.odp),
 [pdf](https://r-toulouse.netlify.app/diapos/2021_03_16_TypoCRAGE.pdf)
 
-Un enregistrement de la vidéo sera bientôt disponible ici même.
+Un enregistrement de la vidéo est disponible :
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wmUzHjTcfTM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 
