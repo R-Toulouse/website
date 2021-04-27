@@ -1,0 +1,35 @@
+---
+title: Rencontre du 20 mai 2021
+author: Guillaume Devailly
+date: '2021-04-27'
+slug: []
+categories:
+  - Rencontres
+tags:
+  - Rencontres
+  - renv
+---
+
+
+La prochaine rencontre de R-Toulouse est prévue par visio le **jeudi 20 mai 2021** de **17h à 18h** sur la plateforme de visioconférence **Zoom**.
+
+---
+
+## Programme
+
+**Package renv : présentation et retour d'expérience. Gérer ses versions de packages R, et de leurs dépendances (et dépendances des dépendances). **, par [Elise Maigne](https://miat.inrae.fr/site/Elise_Maign%C3%A9) (INRAE).
+
+Le package R renv, développé par Kevin Ushey, permet de gérer les versions des packages R pour un projet : spécifier, figer et partager l'environnement R dans lequel on développe son code. Je montrerai le fonctionnement du package (ça fait quoi ?) et comment l'utiliser en pratique (je fais quoi ?), le tout illustré par des expériences personnelles (Elise Maigné elle fait comment ?). 
+
+---
+
+## Informations de connections
+
+Participer à la réunion Zoom: jeudi 20 mai de 17h à 18h
+
+[inrae-fr.zoom.us/j/93945545795](https://inrae-fr.zoom.us/j/93945545795?pwd=OHhBbHVCL2VtVmJQeHlYVm4xa2hSUT09)
+
+ID de réunion : 939 4554 5795
+
+Code secret : Rug-Toulo5
+
