@@ -1,0 +1,28 @@
+---
+title: Diaporama et vidéo de la rencontre de mai 2021
+author: Guillaume Devailly
+date: '2021-05-28'
+slug: []
+categories:
+  - Diaporamas
+  - Vidéo
+tags:
+  - renv
+  - reproductibilité
+---
+
+Merci beaucoup à Elise Maigné pour sa présentation.
+
+Vous pouvez retrouver le diaporamas de la dernière rencontre ici :
+
+- Package renv : présentation et retour d’expérience, par Elise Maigné :
+[html](https://elise.maigne.pages.mia.inra.fr/2021_package_renv/presentation.html),
+[pdf](https://r-toulouse.netlify.app/diapos/2021_05_020_renv.pdf)
+
+Un enregistrement de la vidéo sera prochainement disponible ici même :
+
+---
+
+Toute l'équipe de R-Toulouse vous souhaite un bon été et vous donne rendez-vous à l'automne pour une prochaien rencontre.
+
+![](/img/logo.svg)
