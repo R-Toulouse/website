@@ -19,7 +19,7 @@ Vous pouvez retrouver le diaporamas de la dernière rencontre ici :
 [html](https://elise.maigne.pages.mia.inra.fr/2021_package_renv/presentation.html),
 [pdf](https://r-toulouse.netlify.app/diapos/2021_05_020_renv.pdf)
 
-Un enregistrement de la vidéo est disponible :
+Un enregistrement de la vidéo est disponible sur [youtube](https://www.youtube.com/watch?v=NB59KU36n5k).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NB59KU36n5k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
