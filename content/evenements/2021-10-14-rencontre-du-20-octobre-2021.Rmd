@@ -1,0 +1,37 @@
+---
+title: Rencontre du 20 octobre 2021
+author: Guillaume Devailly
+date: '2021-10-14'
+slug: []
+categories:
+  - Rencontres
+tags:
+  - Rencontres
+  - Tabnet
+  - Machine Learning
+  - mlverse
+---
+
+La prochaine rencontre de R-Toulouse est prévue par visio le **mercredi 20 octobre 2021** de **17h30 à 18h30** sur la plateforme de visioconférence **Zoom**.
+
+---
+
+## Programme
+
+**Introdcution au package Tabnet**, 
+par [Christophe Regouby](https://github.com/cregouby) (Airbus).
+
+Le package Tabnet : quand le deep-learning s'attaque aux données tabulaires pour exploser les tenants
+du titre XGboost et LightGBM, le tout sur le framework torch, une API nativement R au framework de Facebook
+
+---
+
+## Informations de connections
+
+Participer à la réunion Zoom: mercredi 20 octobre de 17h30 à 18h30
+
+[inrae-fr.zoom.us/j/6644865679](https://inrae-fr.zoom.us/j/6644865679)
+
+ID de réunion : 664 486 5679
+
+La réunion sera enregistrée.
