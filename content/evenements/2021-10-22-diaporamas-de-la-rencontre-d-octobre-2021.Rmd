@@ -20,7 +20,7 @@ Vous pouvez retrouver le diaporamas de la dernière rencontre ici :
 [github](https://github.com/cregouby/R-toulouse-tabnet),
 [pdf](https://r-toulouse.netlify.app/diapos/2021_10_20_tabnet.pdf)
 
-Un enregistrement de la vidéo sera bientôt disponible sur [youtube](https://www.youtube.com/watch?v=TpGDr1ChSnY).
+Un enregistrement de la vidéo est disponible sur [youtube](https://www.youtube.com/watch?v=TpGDr1ChSnY).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TpGDr1ChSnY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
