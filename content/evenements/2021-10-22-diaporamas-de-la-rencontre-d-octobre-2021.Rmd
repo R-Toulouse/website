@@ -1,7 +1,7 @@
 ---
 title: Diaporama et vidéo de la rencontre d'octobre 2021
 author: Guillaume Devailly
-date: '2021-05-28'
+date: '2021-10-22'
 slug: []
 categories:
     - Diaporamas
