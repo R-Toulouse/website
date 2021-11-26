@@ -23,22 +23,21 @@ visioconférence **Zoom**.
 par [Guillaume Devailly](https://gdevailly.netlify.app/) (INRAE).
 
 [Bioconductor](https://bioconductor.org/) est un répertoire de package R 
-alternatif au CRAN se spécialisant dans la bio-informatique. Après une brêve
+alternatif au CRAN se spécialisant dans la bio-informatique. Après une brève
 présentation de Bioconductor, je vous présenterai
 {[epistack](https://bioconductor.org/packages/epistack/)}, un package
-de visualisation de données épigénomiques dévelopé dans l'équipe, et 
+de visualisation de données épigénomiques développé dans l'équipe, et 
 ferai un retour d'expérience de la soumission du package à Bioconductor.
 
 ![](/img/epistack.png)
 
 ---
 
-## Informations de connections
+## Informations de connection
 
 Participer à la réunion Zoom: vendredi 10 décembre de 16h30 à 17h30
 
-[inrae-fr.zoom.us/j/6644865679](https://inrae-fr.zoom.us/j/6644865679)
-
+[inrae-fr.zoom.us/j/6644865679](https://inrae-fr.zoom.us/j/6644865679)  
 ID de réunion : 664 486 5679
 
 La réunion sera enregistrée.
