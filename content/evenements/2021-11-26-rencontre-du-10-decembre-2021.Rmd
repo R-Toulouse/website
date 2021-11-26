@@ -1,0 +1,44 @@
+---
+title: Rencontre du 10 décembre 2021
+author: Guillaume Devailly
+date: '2021-11-26'
+slug: []
+categories:
+    - Rencontres
+tags:
+    - Rencontres
+    - Bioconductor
+    - Visualisation
+---
+
+La prochaine rencontre de R-Toulouse est prévue par visio le 
+**vendredi 10 décembre 2021** de **16h30 à 17h30** sur la plateforme de
+visioconférence **Zoom**.
+
+---
+
+## Programme
+
+**Bioconductor et le package de visualisation de données épigénétiques {epistack}**,
+par [Guillaume Devailly](https://github.com/cregouby) (INRAE).
+
+[Bioconductor](https://bioconductor.org/) est un répertoire de package R 
+alternatif au CRAN se spécialisant dans la bio-informatique. Après une brêve
+présentation de Bioconductor, je vous présenterai
+{[epistack](https://bioconductor.org/packages/epistack/)}, un package
+de visualisation de données épigénomiques dévelopé dans l'équipe, et 
+ferais un retour d'expérience de la soumission du package à Bioconductor.
+
+![](/img/epistack.png)
+
+---
+
+## Informations de connections
+
+Participer à la réunion Zoom: mercredi 10 décembre de 16h30 à 17h30
+
+[inrae-fr.zoom.us/j/6644865679](https://inrae-fr.zoom.us/j/6644865679)
+
+ID de réunion : 664 486 5679
+
+La réunion sera enregistrée.
