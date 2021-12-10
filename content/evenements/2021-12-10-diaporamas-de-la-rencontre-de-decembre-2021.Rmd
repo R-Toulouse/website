@@ -1,0 +1,29 @@
+---
+title: Diaporama et vidéo de la rencontre de décembre 2021
+author: Guillaume Devailly
+date: '2021-12-10'
+slug: []
+categories:
+    - Diaporamas
+    - Vidéo
+tags:
+  - Bioconductor
+  - Visualisation
+---
+
+Merci beaucoup à Guillaume Devailly pour sa présentation.
+
+Vous pouvez retrouver le diaporamas de la dernière rencontre ici :
+
+- **Bioconductor et le package de visualisation de données épigénétiques {epistack}**,
+par [Guillaume Devailly](https://gdevailly.netlify.app/) (INRAE).
+[Google slides](https://docs.google.com/presentation/d/1l9a008G1tRCDrLww1x4_pWx279liX93F/edit?usp=sharing&ouid=115253382213507209053&rtpof=true&sd=true),
+[pdf](https://r-toulouse.netlify.app/diapos/2021_12_10_epistack.pdf)
+
+Un enregistrement de la vidéo sera prochainement disponible.
+
+---
+
+A bientôt pour une prochaine rencontre, sans doute en visio.
+
+![](/img/logo.svg)
