@@ -1,0 +1,44 @@
+---
+title: Rencontre du 10 décembre 2021
+author: Guillaume Devailly
+date: '2021-12-17'
+slug: []
+categories:
+    - Rencontres
+tags:
+    - Rencontres
+    - SOMbrero
+    - Statistiques
+---
+
+La prochaine rencontre de R-Toulouse est prévue par visio le 
+**jeudi 27 janvier 2021** de **16h00 à 17h00** sur la plateforme de
+visioconférence **Zoom**.
+
+---
+
+## Programme
+
+**{SOMbrero} : un package R pour les cartes auto-organisatrices**,
+par [Nathalie Vialaneix](https://www.nathalievialaneix.eu/) (INRAE, 
+twitter: [Natty_V2](https://twitter.com/Natty_V2),
+Linkedin: [nathalievilla](https://linkedin.com/in/nathalievilla)).
+
+Je vous présenterai [SOMbrero](https://cran.r-project.org/package=SOMbrero),
+un package R pour faire des cartes
+auto-organisatrices qui étend l'algorithme initial de Kohonen aux
+données de tables de contingence et aux données décrites par des
+dissimilarités. SOMbrero a été développé avec Élise Maigné, Jérôme
+Mariette, Madalina Olteanu, Fabrice Rossi, Laura Bendhaïba et Julien
+Bolaert.
+
+---
+
+## Informations de connection
+
+Participer à la réunion Zoom: jeudi 27 janvier de 16h00 à 17h00
+
+[inrae-fr.zoom.us/j/6644865679](https://inrae-fr.zoom.us/j/6644865679)  
+ID de réunion : 664 486 5679
+
+La réunion sera enregistrée.
