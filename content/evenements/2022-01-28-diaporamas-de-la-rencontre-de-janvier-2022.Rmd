@@ -1,0 +1,30 @@
+---
+title: Diaporama et vidéo de la rencontre de janvier 2022
+author: Guillaume Devailly
+date: '2022-01-28'
+slug: []
+categories:
+    - Diaporamas
+    - Vidéo
+tags:
+    - SOMbrero
+    - Statistiques
+---
+
+Merci beaucoup à Nathalie Vialaneix pour sa présentation.
+
+Vous pouvez retrouver le diaporamas de la dernière rencontre ici :
+
+- **{SOMbrero} : un package R pour les cartes auto-organisatrices**,
+par [Nathalie Vialaneix](https://www.nathalievialaneix.eu/) (INRAE): 
+[pdf](https://r-toulouse.netlify.app/diapos/2022_01_27_sombrero.pdf)
+
+Un enregistrement de la vidéo est disponible :
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iKGaGQeV18k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
+A bientôt pour une prochaine rencontre, probablement en visio.
+
+![](/img/logo.svg)
