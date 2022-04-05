@@ -1,0 +1,33 @@
+---
+title: Diaporama et vidéo de la rencontre de mars 2022
+author: Guillaume Devailly
+date: '2022-04-05'
+slug: []
+categories:
+    - Diaporamas
+    - Vidéo
+tags:
+    - broom
+    - Statistiques
+    - purrr
+    - tidyverse
+draft: true
+---
+
+Merci beaucoup à Guilhem Huau et [Bertrand Servin](https://twitter.com/BertrandServin) pour leur présentation.
+
+Vous pouvez retrouver le diaporamas de la dernière rencontre ici :
+
+- **{broom}, {purrr}, {furrr} : automatiser la modélisation statistique dans le tidyverse**
+: 
+[pdf](https://r-toulouse.netlify.app/diapos/2022_01_27_sombrero.pdf)
+
+Un enregistrement de la vidéo est disponible :
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/23DTptigzwE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
+A bientôt pour une prochaine rencontre.
+
+![](/img/logo.svg)
