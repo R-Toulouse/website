@@ -11,7 +11,7 @@ tags:
     - Statistiques
     - purrr
     - tidyverse
-draft: true
+draft: false
 ---
 
 Merci beaucoup à Guilhem Huau et [Bertrand Servin](https://twitter.com/BertrandServin) pour leur présentation.
@@ -19,8 +19,8 @@ Merci beaucoup à Guilhem Huau et [Bertrand Servin](https://twitter.com/Bertrand
 Vous pouvez retrouver le diaporamas de la dernière rencontre ici :
 
 - **{broom}, {purrr}, {furrr} : automatiser la modélisation statistique dans le tidyverse**
-: 
-[pdf](https://r-toulouse.netlify.app/diapos/2022_01_27_sombrero.pdf)
+: [html](https://genoweb.toulouse.inra.fr/~servin/broom-r-toulouse.html), 
+[pdf](https://r-toulouse.netlify.app/diapos/2022_03_31_broom.pdf)
 
 Un enregistrement de la vidéo est disponible :
 
