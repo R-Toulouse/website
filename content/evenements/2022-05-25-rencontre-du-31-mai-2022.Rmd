@@ -1,7 +1,7 @@
 ---
-title: Rencontre du 31 mars 2022
+title: Rencontre du 31 mai 2022
 author: Guillaume Devailly
-date: '2022-03-01'
+date: '2022-05-25'
 slug: []
 categories:
     - Rencontres
