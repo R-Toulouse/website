@@ -13,7 +13,7 @@ tags:
 
 La prochaine rencontre de R-Toulouse est prévue le 
 **31 mai 2022** de **16h30 à 17h30**, 
-au Centre de Biology Intégrative de Toulouse (métro Université Paul Sabatier, ligne B).
+au Centre de Biology Integrative de Toulouse (métro Université Paul Sabatier, ligne B).
 
 ```{r plan, echo=FALSE}
 library(leaflet)
@@ -22,7 +22,7 @@ leaflet() %>%
   addMarkers(lat = 43.5594, lng = 1.47137, popup = "Centre de Biologie Intégrative")
 ```
 
-La salle sera accessible à toutes et tous, il faudra se présenter à l'accueil du bâtiement.
+La salle sera accessible à toutes et tous, il faudra se présenter à l'accueil du bâtiment.
 
 ---
 
