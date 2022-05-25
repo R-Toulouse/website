@@ -1,0 +1,39 @@
+---
+title: Rencontre du 31 mars 2022
+author: Guillaume Devailly
+date: '2022-03-01'
+slug: []
+categories:
+    - Rencontres
+tags:
+    - Rencontres
+    - ggplot2
+    - ggpubr
+---
+
+La prochaine rencontre de R-Toulouse est prévue le 
+**31 mai 2022** de **16h30 à 17h30**, 
+au Centre de Biology Intégrative de Toulouse (métro Université Paul Sabatier, ligne B).
+
+```{r plan, echo=FALSE}
+library(leaflet)
+leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  addMarkers(lat = 43.5594, lng = 1.47137, popup = "Centre de Biologie Intégrative")
+```
+
+La salle sera accessible à toutes et tous, il faudra se présenter à l'accueil du bâtiement.
+
+---
+
+## Programme
+
+**Comment reproduire en ggplot2 un graphique du package ggpubr ?**,
+par [Sébastien Déjean](http://www.math.univ-toulouse.fr/~sdejean/) (IMT).
+
+L'exposé vise, dans un premier temps, à présenter le package {ggpubr} (Publication Ready Plots), puis, pour l'exercice,  à voir comment reproduire, plus ou moins simplement, de tels graphiques avec {ggplot2}.
+L'exercice m'a permis de découvrir quelques trucs de ggplot2 et de m'interroger sur la tidyness des données.
+
+---
+
+Il n'est malheureusement pas prévu de retransmission par visio de cette rencontre.
