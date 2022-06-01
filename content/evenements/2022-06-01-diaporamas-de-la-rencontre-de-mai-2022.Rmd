@@ -1,0 +1,26 @@
+---
+title: Diaporama et vidéo de la rencontre de mars 2022
+author: Guillaume Devailly
+date: '2022-06-01'
+slug: []
+categories:
+    - Diaporamas
+tags:
+    - ggplot2
+    - ggpubr
+draft: false
+---
+
+Merci beaucoup à [Sébastien Déjean](http://www.math.univ-toulouse.fr/~sdejean/) (IMT) pour sa présentation.
+
+Vous pouvez retrouver le support de la dernière rencontre ici :
+
+- **Comment reproduire en ggplot2 un graphique du package ggpubr ?**
+: [html](https://r-toulouse.netlify.app/diapos/html/2022_05_31_ggpubr.html), 
+[pdf](https://r-toulouse.netlify.app/diapos/2022_05_31_ggpubr.pdf)
+
+---
+
+Nous vous souhaitons une bonne pause estival, et nous nous retrouverons à la rentrée pour de nouvelles rencontres ! 
+
+![](/img/logo.svg)
