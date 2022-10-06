@@ -7,8 +7,10 @@ categories:
     - Rencontres
 tags:
     - Rencontres
-    - ggplot2
-    - ggpubr
+    - pointblank
+    - ASTERICS
+    - renv
+    - web
 ---
 
 La prochaine rencontre de R-Toulouse est prévue le 
