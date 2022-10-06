@@ -1,0 +1,64 @@
+---
+title: Rencontre du 19 octobre 2022
+author: Guillaume Devailly
+date: '2022-10-06'
+slug: []
+categories:
+    - Rencontres
+tags:
+    - Rencontres
+    - ggplot2
+    - ggpubr
+---
+
+La prochaine rencontre de R-Toulouse est prévue le 
+**19 octobre 2022** de **17h00 à 18h00**, 
+dans l'auditorium du Centre de Biology Integrative de Toulouse (métro Université Paul Sabatier, ligne B).
+
+```{r plan, echo=FALSE}
+library(leaflet)
+leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  addMarkers(lat = 43.55925, lng = 1.47143, popup = "Centre de Biologie Intégrative")
+```
+
+La salle sera accessible à toutes et tous, il faudra se présenter à l'accueil du bâtiment.
+Des pancartes *R Toulouse* seront idéalement placées pour vous guider.
+
+---
+
+## Programme
+
+**Validation de donénes avec [{pointblank}](https://cran.r-project.org/package=pointblank)**,
+par [Christophe Regouby](https://github.com/cregouby) (Airbus).
+
+Plus j'utilise ce package, et plus je deviens célèbre et admiré par
+mes clients. Et je me dis "Un quart d'heure de gloire aussi
+facile, ça se partage", alors si vous avez jamais eu besoin de faire
+de la validation de données au moment de leur ingestion, et d'en
+présenter le résultat à quelqu'un, et que vous vous êtes senti couvert
+de honte à cause de lignes de code et  de sorties texte
+ininterprétables, ce talk est pour vous !
+
+**Rserve, renv, flask, Vue.js dans un docker pour intégrer des données omiques
+avec ASTERIC**,
+par [Elise Maigné](https://miat.inra.fr/site/Elise_Maign%C3%A9) et [Nathalie Vialaneix](http://www.nathalievialaneix.eu/) (INRAE).
+
+Dans cette présentation, on vous parlera de l'application
+ASTERICS https://asterics.miat.inrae.fr pour réaliser des analyses
+statistiques exploratoires et intégratives et des solutions techniques
+que l'on a sélectionnées pour la développer. Enfin, on vous expliquera
+comment déployer cette application à partir de ses fichiers docker. Et
+ce sera beaucoup mieux que la présentation de Christophe Regouby.
+
+---
+
+Après la rencontre, nous proposons à celles et ceux qui le souhaite d'aller prendre un vers au
+Pub Oxford (3 Av. Tolosane, 31520 Ramonville-Saint-Agne).
+
+Nous tentrons de mettre en place une diffusion simultanée par visio-conférence, ainsi que la mise à disposition de l'enregistrement.
+
+A bientôt.
+
+![](/img/logo.svg)
+
