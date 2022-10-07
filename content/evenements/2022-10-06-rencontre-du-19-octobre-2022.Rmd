@@ -31,7 +31,7 @@ Des pancartes *R Toulouse* seront idéalement placées pour vous guider.
 
 ## Programme
 
-**Validation de donénes avec [{pointblank}](https://cran.r-project.org/package=pointblank)**,
+**Validation de données avec [{pointblank}](https://cran.r-project.org/package=pointblank)**,
 par [Christophe Regouby](https://github.com/cregouby) (Airbus).
 
 Plus j'utilise ce package, et plus je deviens célèbre et admiré par
@@ -59,6 +59,10 @@ Après la rencontre, nous proposons à celles et ceux qui le souhaite d'aller pr
 Pub Oxford (3 Av. Tolosane, 31520 Ramonville-Saint-Agne).
 
 Nous tentrons de mettre en place une diffusion simultanée par visio-conférence, ainsi que la mise à disposition de l'enregistrement.
+
+[Lien Zoom](https://cnrs.zoom.us/j/92296499626?pwd=WlpNYXNUdm5uNkpsaVhaakNmWmJxZz09)   
+ID de réunion : 922 9649 9626  
+Code secret : useR221019  
 
 A bientôt.
 
