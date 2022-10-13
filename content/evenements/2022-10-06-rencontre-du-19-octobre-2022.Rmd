@@ -43,7 +43,7 @@ de honte à cause de lignes de code et  de sorties texte
 ininterprétables, ce talk est pour vous !
 
 **Rserve, renv, flask, Vue.js dans un docker pour intégrer des données omiques
-avec ASTERIC**,
+avec ASTERICS**,
 par [Elise Maigné](https://miat.inra.fr/site/Elise_Maign%C3%A9) et [Nathalie Vialaneix](http://www.nathalievialaneix.eu/) (INRAE).
 
 Dans cette présentation, on vous parlera de l'application
