@@ -1,0 +1,37 @@
+---
+title: Diaporama et vidéo de la rencontre d'octobre 2022
+author: Guillaume Devailly
+date: '2022-10-21'
+slug: []
+categories:
+    - Diaporamas
+    - Vidéo
+tags:
+    - pointblank
+    - ASTERICS
+    - renv
+    - web
+draft: false
+---
+
+Merci beaucoup à [Christophe Regouby](https://github.com/cregouby) et [Nathalie Vialaneix](http://www.nathalievialaneix.eu/) pour leurs présentations.
+
+Vous pouvez retrouver les diaporamas de la dernière rencontre ici :
+
+- **Validation de données avec [{pointblank}](https://cran.r-project.org/package=pointblank)**
+: [pdf](https://r-toulouse.netlify.app/diapos/2022_10_19_pointblank.pdf)
+- **Rserve, renv, flask, Vue.js dans un docker pour intégrer des données omiques avec ASTERICS**
+: [pdf](https://r-toulouse.netlify.app/diapos/2022_10_19_asterics.pdf)
+
+Un enregistrement des vidéo est disponible :
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5IDUumqhQ04" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rzCRU6eUd48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
+N'hésitez pas à nous contacter si vous souhaitez présenter quelque chose.
+A bientôt pour une prochaine rencontre.
+
+![](/img/logo.svg)

@@ -1,5 +1,5 @@
 ---
-title: Diaporama et vidéo de la rencontre de mars 2022
+title: Diaporama de la rencontre de mai 2022
 author: Guillaume Devailly
 date: '2022-06-01'
 slug: []
