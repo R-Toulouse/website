@@ -1,0 +1,50 @@
+---
+title: Rencontre du 14 décembre 2022
+author: Guillaume Devailly
+date: '2022-12-07'
+slug: []
+categories:
+    - Rencontres
+tags:
+    - Rencontres
+    - Quarto
+    - Rmarkdown
+    - pandoc
+
+---
+
+La prochaine rencontre de R-Toulouse est prévue le 
+**mercredi 14 octobre 2022** de **17h00 à 18h00**, 
+dans l'auditorium du Centre de Biology Integrative de Toulouse (métro Université Paul Sabatier, ligne B).
+
+```{r plan, echo=FALSE}
+library(leaflet)
+leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  addMarkers(lat = 43.55925, lng = 1.47143, popup = "Centre de Biologie Intégrative")
+```
+
+La salle sera accessible à toutes et tous, il faudra se présenter à l'accueil du bâtiment.
+Des pancartes *R Toulouse* seront idéalement placées pour vous guider.
+
+---
+
+## Programme
+
+**Quarto, un notebook pour les gouverner tous**,
+par Aurélie Mercadié (INRAE) et [Christophe Regouby](https://github.com/cregouby) (Airbus).
+
+Cette présentation est une petite introduction au nouveau système de création de contenu présenté cet été par R Studio : Quarto, censé révolutionner nos notebooks. Une petite histoire de ces derniers vous sera contée. On verra aussi comment cela se passe en pratique (Comment faire pour passer de Rmarkdown à Quarto ? Travailler avec plusieurs langages, c’est toujours possible ?) et on vous fera part de nos retours d’expérience.
+
+---
+
+Nous tenterons de mettre en place une diffusion simultanée par visio-conférence, ainsi que la mise à disposition de l'enregistrement.
+
+[Lien Zoom](https://cnrs.zoom.us/j/93671329764?pwd=TnhnejJ1d2g2NDNvNDNpL3RIT1BBdz09)   
+ID de réunion : 936 7132 9764    
+Code secret : Rtls141222    
+
+A bientôt.
+
+![](/img/logo.svg)
+
