@@ -69,3 +69,8 @@ enableEmoji = true
     url = "https://groupes.renater.fr/sympa/info/r-toulouse"
     name = "envelope-o"
     weight = 4
+
+[[menu.icon]]
+    url = "https://www.youtube.com/@r-toulouserug6316"
+    name = "youtube"
+    weight = 5
