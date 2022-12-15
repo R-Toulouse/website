@@ -1,0 +1,33 @@
+---
+title: Diaporama et vidéo de la rencontre de décembre 2022
+author: Guillaume Devailly
+date: '2022-12-15'
+slug: []
+categories:
+    - Diaporamas
+    - Vidéo
+tags:
+    - Quarto
+    - Rmarkdown
+    - pandoc
+draft: false
+---
+
+Merci beaucoup à [Christophe Regouby](https://github.com/cregouby) et Aurélie Mercadié pour leur présentation.
+
+Vous pouvez retrouver le diaporama de la dernière rencontre ici :
+
+- **Quarto, un notebook pour les gouverner tous** :
+[html](https://camembr.quarto.pub/hello-quarto/#/hello-quarto-title),
+[source](https://github.com/CamembR/quarto_meetup),
+[pdf](https://r-toulouse.netlify.app/diapos/2022_12_14_quarto.pdf)
+
+
+Un enregistrement vidéo sera bientôt disponible ici même.
+
+---
+
+N'hésitez pas à nous contacter si vous souhaitez présenter quelque chose.
+A bientôt pour une prochaine rencontre, à priori le 2 février à 16h30 ou 17h au Centre de Biologie Intégrative, Université Paul Sabatier.
+
+![](/img/logo.svg)
