@@ -23,7 +23,9 @@ Vous pouvez retrouver le diaporama de la dernière rencontre ici :
 [pdf](https://r-toulouse.netlify.app/diapos/2022_12_14_quarto.pdf)
 
 
-Un enregistrement vidéo sera bientôt disponible ici même.
+Un enregistrement vidéo est disponible:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sdgH9cMz5eQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ---
 
