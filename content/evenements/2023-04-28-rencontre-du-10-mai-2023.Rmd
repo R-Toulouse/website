@@ -1,0 +1,41 @@
+---
+title: Rencontre du 10 mai 2023
+author: Guillaume Devailly
+date: '2023-05-28'
+slug: []
+categories:
+    - Rencontres
+tags:
+    - Rencontres
+    - Package
+---
+
+La prochaine rencontre de R-Toulouse est prévue le 
+**mercredi 10 mai 2023** de **17h00 à 18h00**, 
+dans l'auditorium du Centre de Biology Integrative de Toulouse (métro Université Paul Sabatier, ligne B).
+
+```{r plan, echo=FALSE}
+library(leaflet)
+leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  addMarkers(lat = 43.55925, lng = 1.47143, popup = "Centre de Biologie Intégrative")
+```
+
+La salle sera accessible à toutes et tous, il faudra se présenter à l'accueil du bâtiment.
+Des pancartes *R Toulouse* seront idéalement placées pour vous guider.
+
+---
+
+## Programme
+
+**Retour d'expériences sur le dévelopement de packages R**,
+par Clémentine Decamps (INSERM, CRCT).
+
+---
+
+Nous tenterons de mettre en place une diffusion simultanée par visio-conférence, ainsi que la mise à disposition de l'enregistrement.
+
+A bientôt. 
+
+![](/img/logo.svg)
+
