@@ -28,8 +28,10 @@ Des pancartes *R Toulouse* seront idéalement placées pour vous guider.
 
 ## Programme
 
-**Retour d'expériences sur le dévelopement de packages R**,
+**Pourquoi et comment mettre son code sous la forme de packages R ?**,
 par Clémentine Decamps (INSERM, CRCT).
+
+Organiser son code sous la forme de packages a de nombreux avantages : organisation, reproductibilité, diffusion... Dans cette courte présentation, je vais essayer de vous montrer quelques outils pour créer très rapidement et simplement ses propres package, pour un usage individuel ou collectif !
 
 ---
 
