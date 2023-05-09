@@ -37,7 +37,9 @@ Organiser son code sous la forme de packages a de nombreux avantages : organisat
 
 Nous tenterons de mettre en place une diffusion simultanée par visio-conférence, ainsi que la mise à disposition de l'enregistrement.
 
-Le lien visio sera disponible ici prochainement.
+Lien *Zoom* : [cnrs.zoom.us/j/99244789714?pwd=dHVsbDVWaUd3ODdRbTA2cWhTdS9VZz09](https://cnrs.zoom.us/j/99244789714?pwd=dHVsbDVWaUd3ODdRbTA2cWhTdS9VZz09)
+
+Mot de passe : **bu1Z23**
 
 ![](/img/logo.svg)
 
