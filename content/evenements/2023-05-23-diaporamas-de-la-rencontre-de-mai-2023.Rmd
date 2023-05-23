@@ -1,0 +1,31 @@
+---
+title: Diaporama et vidéo de la rencontre de mai 2023
+author: Guillaume Devailly
+date: '2023-05-23'
+slug: []
+categories:
+    - Diaporamas
+    - Vidéo
+tags:
+    - Package
+draft: false
+---
+
+Merci beaucoup à Clémentine Decamps pour sa présentation.
+
+Vous pouvez retrouver le diaporama de la dernière rencontre ici :
+
+- **Pourquoi et comment mettre son code sous la forme de packages R ?** :
+[pdf](https://r-toulouse.netlify.app/diapos/2023_05_10_package.pdf)
+
+
+Un enregistrement vidéo est disponible:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PuX_C7NVOSo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+---
+
+N'hésitez pas à nous contacter si vous souhaitez présenter quelque chose.
+A bientôt pour une prochaine rencontre.
+
+![](/img/logo.svg)
