@@ -1,0 +1,40 @@
+---
+title: Rencontre du 09 avril 2025
+author: Tom Rohmer
+date: '2025-04-09'
+slug: []
+categories:
+    - Rencontres
+tags:
+    - Rencontres
+    - torch
+    - Machine Learning
+---
+
+<link href="/rmarkdown-libs/htmltools-fill/fill.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
+<script src="/rmarkdown-libs/jquery/jquery-3.6.0.min.js"></script>
+<link href="/rmarkdown-libs/leaflet/leaflet.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/leaflet/leaflet.js"></script>
+<link href="/rmarkdown-libs/leafletfix/leafletfix.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/proj4/proj4.min.js"></script>
+<script src="/rmarkdown-libs/Proj4Leaflet/proj4leaflet.js"></script>
+<link href="/rmarkdown-libs/rstudio_leaflet/rstudio_leaflet.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/leaflet-binding/leaflet.js"></script>
+
+
+<p>Bonjour à toutes et à tous,
+En cette année 2025, le réseau R-Toulouse redémarre, et nous avons le plaisir d’accueillir <strong><a href="https://tdhock.github.io/">Toby Dylan Hocking</a></strong>, de l’université de Sherbrooke (CA) le <strong>mercredi 9 avril à 17h</strong> pour une présentation intitulée : <strong>Optimizing ROC curves using torch in R</strong>.</p>
+<p>Le séminaire se tiendra à <strong>l’amphithéâtre du Centre de Biologie Intégrative (CBI)</strong>, sur le campus Paul Sabatier de l’université de Toulouse.</p>
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-1" style="width:672px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addMarkers","args":[43.55925,1.47143,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Centre de Biologie Intégrative",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[43.55925,43.55925],"lng":[1.47143,1.47143]}},"evals":[],"jsHooks":[]}</script>
+<p>La salle sera accessible à toutes et tous, il faudra se présenter à l’accueil du bâtiment.</p>
+<hr />
+<div id="programme" class="section level2">
+<h2>Programme</h2>
+<p><strong>Optimizing ROC curves using torch in R</strong></p>
+<p><strong>Speaker</strong>: Toby Dylan Hocking</p>
+<p>Receiver Operating Characteristic (ROC) curves are useful for evaluating binary classification models, especially when data are unbalanced (97% negative, 3% positive, as in medical diagnosis, image segmentation, etc). We propose a new surrogate loss function called the AUM, which can be used to optimize ROC curves during gradient descent learning. Whereas previous loss functions are based on summing over all labeled examples or pairs, the AUM requires a sort and a sum over the sequence of points on the ROC curve. We show how the AUM loss can be easily implemented in torch code (using R or python), so the ROC curve optimization objective can be used during neural network training (in addition to its typical use for evaluation). In our empirical study of unbalanced binary classification problems, we show that our new AUM minimization learning algorithm results in improved AUC and speed relative to previous baselines.</p>
+<hr />
+<p><img src="/img/logo.svg" /></p>
+</div>

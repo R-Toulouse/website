@@ -1,0 +1,43 @@
+---
+title: Rencontre du 09 avril 2025
+author: Tom Rohmer
+date: '2025-04-09'
+slug: []
+categories:
+    - Rencontres
+tags:
+    - Rencontres
+    - torch
+    - Machine Learning
+---
+
+
+Bonjour à toutes et à tous,
+En cette année 2025, le réseau R-Toulouse redémarre, et nous avons le plaisir d'accueillir **[Toby Dylan Hocking](https://tdhock.github.io/)**, de l'université de Sherbrooke (CA) le **mercredi 9 avril à 17h** pour une présentation intitulée : **Optimizing ROC curves using torch in R**. 
+
+Le séminaire se tiendra à **l'amphithéâtre du Centre de Biologie Intégrative (CBI)**, sur le campus Paul Sabatier de l'université de Toulouse.
+
+```{r plan, echo=FALSE}
+library(leaflet)
+leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  addMarkers(lat = 43.55925, lng = 1.47143, popup = "Centre de Biologie Intégrative")
+```
+
+La salle sera accessible à toutes et tous, il faudra se présenter à l'accueil du bâtiment.
+
+---
+
+## Programme
+
+**Optimizing ROC curves using torch in R**
+
+**Speaker**: Toby Dylan Hocking
+
+Receiver Operating Characteristic (ROC) curves are useful for evaluating binary classification models, especially when data are unbalanced (97% negative, 3% positive, as in medical diagnosis, image segmentation, etc). We propose a new surrogate loss function called the AUM, which can be used to optimize ROC curves during  gradient descent learning. Whereas previous loss functions are based on summing over all labeled examples or pairs, the AUM requires a sort and a sum over the sequence of points on the ROC curve. We show how the AUM loss can be easily implemented in torch code (using R or python), so the ROC curve optimization objective can be used during neural network training (in addition to its typical use for evaluation). In our empirical study of unbalanced binary classification problems, we show that our new AUM minimization learning algorithm results in improved AUC and speed relative to previous baselines.
+
+---
+
+
+![](/img/logo.svg)
+
